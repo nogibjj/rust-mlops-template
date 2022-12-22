@@ -13,3 +13,7 @@ format:
 lint:
 	@echo "Linting all projects with cargo"
 	./lint.sh
+
+test:
+	@echo "Testing all projects with cargo"
+	./test.sh
