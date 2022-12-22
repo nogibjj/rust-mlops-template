@@ -32,6 +32,10 @@ There are a few options:
 * You can follow the [Official Install Guide for Rust](https://www.rust-lang.org/tools/install)
 * Create a [repo with this template](https://github.com/nogibjj/rust-mlops-template)
 
+Once you install you should check to see things work:
+
+```rustc --version```
+
 #### First Project:  Deduplication Command-Line Tool
 
 I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  

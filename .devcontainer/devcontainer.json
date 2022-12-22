@@ -28,7 +28,8 @@
 				"GitHub.copilot-labs",
 				"GitHub.copilot-nightly",
 				"ms-azuretools.vscode-docker",
-				"technosophos.vscode-make"
+				"technosophos.vscode-make",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
