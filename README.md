@@ -25,6 +25,7 @@ One of the key goals of this project is to determine workflows that do not invol
 * [Comprehensive Rust Course Google](https://google.github.io/comprehensive-rust/)
 * [Rust Machine Learning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 * [Rust Async Book](https://github.com/rust-lang/async-book)
+* [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
 
 ### Authoring Tools
 
