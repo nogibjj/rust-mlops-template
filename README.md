@@ -196,6 +196,13 @@ Found 1 duplicates
 Duplicate files: ["/tmp/two.txt", "/tmp/one.txt"]
 ```
 
+Next things to complete:
+
+* Switch to subcommands and create a `search` and `dedupe` subcommand
+* Add better testing with sample test files
+* Figure out how to release packages for multiple OS versions in GitHub
+
+
 ## Language References and Tutorials
 
 * [Comprehensive Rust Course Google](https://google.github.io/comprehensive-rust/)
