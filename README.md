@@ -16,7 +16,7 @@ One of the key goals of this project is to determine workflows that do not invol
 ### Using Data (i.e. Data Science)
 
 * StackOverflow https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages[states that #rust is on 7th year as the most loved language 87% of developers want to continue developing](https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages) in and ties with Python as the most wanted technology.  Clearly there is traction.
-* According to Modulecounts it looks like an exponential growth curve to Rust.
+* According to http://www.modulecounts.com/[Modulecounts] it looks like an exponential growth curve to Rust.
 ![Python vs Ruby vs Rust](https://user-images.githubusercontent.com/58792/209174014-cb3d7370-d8a2-4298-847b-f1e9f9f29a69.png)
 
 
