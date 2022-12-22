@@ -93,6 +93,10 @@ Hello, world MLOPs!
 To run without all of the noise:  `cargo run --quiet`.
 To run the binary created `./target/debug/hello`
 
+### Run with GitHub Actions
+
+* [reference this project](https://github.com/actions-rs/cargo)
+
 
 ### First Big Project:  Deduplication Command-Line Tool
 

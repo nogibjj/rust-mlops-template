@@ -1,4 +1,4 @@
-name: Rust build and test for `hello` directory
+name: Rust CI/CD Pipeline
 
 on:
   push:
@@ -12,13 +12,10 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./hello
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
-      run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+    - run: sudo apt update
+    - name: Format
+      run: make format
+

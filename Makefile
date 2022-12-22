@@ -5,3 +5,7 @@ rust-version:
 	rustfmt --version			#rust code formatter
 	rustup --version			#rust toolchain manager
 	clippy-driver --version		#rust linter
+
+format:
+	@echo "Formatting all projects with cargo"
+	./format.sh
