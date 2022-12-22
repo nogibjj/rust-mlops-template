@@ -13,6 +13,7 @@ One of the key goals of this project is to determine workflows that do not invol
   * Why not have a very fast computational speed?
   * Why not be able to write both for the Linux Kernel and general purpose scripting?
   * Why not see if there is a better solution than Python (which is essentially two languages scientific python and regular Python)?
+  * Python is one of the least green languages in terms of energy efficiency, but [Rust is one of the best](https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf).
 
 ### Using Data (i.e. Data Science)
 
