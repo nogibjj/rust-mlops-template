@@ -95,7 +95,35 @@ To run the binary created `./target/debug/hello`
 
 ### Run with GitHub Actions
 
-* [reference this project](https://github.com/actions-rs/cargo)
+GitHub Actions uses a `Makefile` to simplify automation
+
+```yaml
+name: Rust CI/CD Pipeline
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: update linux
+      run: sudo apt update 
+    - name: update Rust
+      run: make install
+    - name: Check Rust versions
+      run: make rust-version
+    - name: Format
+      run: make format
+    - name: Lint
+      run: make lint
+    - name: Test
+      run: make test
+```
 
 
 ### First Big Project:  Deduplication Command-Line Tool
