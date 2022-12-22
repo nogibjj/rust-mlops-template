@@ -176,6 +176,25 @@ all: format lint test run
 
 Now as I build code, I can simply do:  `make all` and get a high quality build.
 
+Next, let's create some test files:
+
+```bash
+echo "foo" > /tmp/one.txt
+echo "foo" > /tmp/two.txt
+echo "bar" > /tmp/three.txt
+```
+
+The final version works:  `cargo run -- --path /tmp`
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/dedupe (main ✗) $ cargo run -- --path /tmp
+    Finished dev [unoptimized + debuginfo] target(s) in 0.03s
+     Running `target/debug/dedupe --path /tmp`
+Searching path: "/tmp"
+Found 5 files
+Found 1 duplicates
+Duplicate files: ["/tmp/two.txt", "/tmp/one.txt"]
+```
 
 ## Language References and Tutorials
 
