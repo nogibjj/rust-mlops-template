@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: update linux
-      run: sudo apt update && sudo apt install --reinstall binutils
+      run: sudo apt update 
     - name: update Rust
       run: make install
     - name: Check Rust versions
