@@ -21,9 +21,21 @@ One of the key goals of this project is to determine workflows that do not invol
 
 ### Getting Started
 
-This repository is a GitHub Template and you can use it to create a new repository that uses [GitHub Codespaces](https://github.com/features/codespaces).  It is pre-configured with Rust installed and 
+This repository is a GitHub Template and you can use it to create a new repository that uses [GitHub Codespaces](https://github.com/features/codespaces).  It is pre-configured with [Rust](https://www.rust-lang.org/tools/install), [Cargo](https://crates.io/) and other useful extensions like [GitHub Copilot](https://github.com/features/copilot).
 
+#### Install
 
+There are a few options:
+
+* You can follow the [Official Install Guide for Rust](https://www.rust-lang.org/tools/install)
+* Create a [repo with this template](https://github.com/nogibjj/rust-mlops-template)
+
+#### First Project:  Deduplication Command-Line Tool
+
+I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  
+
+* Walk the filesystem and create a checksum for each file
+* If the checksum matches an existing checksum, then mark it as a duplicate file
 
 
 ## Language References and Tutorials
