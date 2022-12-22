@@ -1,6 +1,7 @@
+[![Codespaces Prebuilds](https://github.com/nogibjj/rust-mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/nogibjj/rust-mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds)
+
 # rust-mlops-template
 A work in progress to build out solutions in Rust for MLOPs
-
 
 ## Motivation
 
