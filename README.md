@@ -127,14 +127,35 @@ jobs:
 
 To run everything locally do:  `make all`.
 
-
 ### First Big Project:  Deduplication Command-Line Tool
 
 I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  
 
-* Walk the filesystem and create a checksum for each file
-* If the checksum matches an existing checksum, then mark it as a duplicate file
+1. Walk the filesystem and create a checksum for each file
+2. If the checksum matches an existing checksum, then mark it as a duplicate file
 
+*Getting Started*
+
+* Create new project: `crate new dedupe`
+* Check latest clap version: https://crates.io/crates/clap and put this version in the `Cargo.toml`
+The file should look similar to this.
+
+
+```toml
+[package]
+name = "dedupe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.0.32"
+
+[dev-dependencies]
+assert_cmd = "2"
+```
+
+* Next up make a test directory:  `mkdir tests` that is parallel to `src`
+* touch a `lib.rs` file and use this for the logic then run `cargo run`
 
 ## Language References and Tutorials
 

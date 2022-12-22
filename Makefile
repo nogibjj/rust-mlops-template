@@ -1,7 +1,8 @@
 install:
-	@echo "Updating rust toolchain"
-	rustup update stable
-	rustup default stable
+	# Install if needed
+	#@echo "Updating rust toolchain"
+	#rustup update stable
+	#rustup default stable
 
 rust-version:
 	@echo "Rust command-line utility versions:"
