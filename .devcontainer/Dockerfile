@@ -1,9 +1,7 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/rust/.devcontainer/base.Dockerfile
+FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
 
-# [Choice] Debian OS version (use bullseye on local arm64/Apple Silicon): buster, bullseye
-ARG VARIANT="buster"
-FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
-
-# [Optional] Uncomment this section to install additional packages.
- RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install --no-install-recommends vim
+# Include lld linker to improve build times either by using environment variable
+# RUSTFLAGS="-C link-arg=-fuse-ld=lld" or with Cargo's configuration file (i.e see .cargo/config.toml).
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+   && apt-get -y install clang lld \
+   && apt-get autoremove -y && apt-get clean -y

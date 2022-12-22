@@ -19,6 +19,12 @@ One of the key goals of this project is to determine workflows that do not invol
 * According to http://www.modulecounts.com/[Modulecounts] it looks like an exponential growth curve to Rust.
 ![Python vs Ruby vs Rust](https://user-images.githubusercontent.com/58792/209174014-cb3d7370-d8a2-4298-847b-f1e9f9f29a69.png)
 
+### Getting Started
+
+This repository is a GitHub Template and you can use it to create a new repository that uses [GitHub Codespaces](https://github.com/features/codespaces).  It is pre-configured with Rust installed and 
+
+
+
 
 ## Language References and Tutorials
 
@@ -26,6 +32,8 @@ One of the key goals of this project is to determine workflows that do not invol
 * [Rust Machine Learning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 * [Rust Async Book](https://github.com/rust-lang/async-book)
 * [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
+* [Command-Line Rust](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
+
 
 ### Authoring Tools
 
