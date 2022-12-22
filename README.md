@@ -21,11 +21,11 @@ One of the key goals of this project is to determine workflows that do not invol
 * According to http://www.modulecounts.com/[Modulecounts] it looks like an exponential growth curve to Rust.
 ![Python vs Ruby vs Rust](https://user-images.githubusercontent.com/58792/209174014-cb3d7370-d8a2-4298-847b-f1e9f9f29a69.png)
 
-### Getting Started
+## Getting Started
 
 This repository is a GitHub Template and you can use it to create a new repository that uses [GitHub Codespaces](https://github.com/features/codespaces).  It is pre-configured with [Rust](https://www.rust-lang.org/tools/install), [Cargo](https://crates.io/) and other useful extensions like [GitHub Copilot](https://github.com/features/copilot).
 
-#### Install
+### Install and Setup
 
 There are a few options:
 
@@ -36,7 +36,63 @@ Once you install you should check to see things work:
 
 ```rustc --version```
 
-#### First Project:  Deduplication Command-Line Tool
+Other option is to run `make rust-version` which checks both the cargo and rust version.
+
+### Rust CLI Tools Ecosystem
+
+You can see there several tools which help you get things done in Rust:
+
+```Makefile
+rust-version:
+	@echo "Rust command-line utility versions:"
+	rustc --version 			#rust compiler
+	cargo --version 			#rust package manager
+	rustfmt --version			#rust code formatter
+	rustup --version			#rust toolchain manager
+	clippy-driver --version		#rust linter
+```
+
+### Hello World Setup
+
+This is an intentionally simple full end-to-end hello world example.  I used some excellent ideas from @kyclark, author of the command-line-rust book from O'Reilly [here](https://github.com/kyclark/command-line-rust/tree/master/01_hello).  You can recreate on your own following these steps
+
+Create a project directory
+* `cargo new hello`
+
+This creates a structure you can see with `tree hello`
+
+```bash
+hello/
+├── Cargo.toml
+└── src
+    └── main.rs
+1 directory, 2 files
+```
+
+The `Cargo.toml` file is where the project is configured, i.e. if you needed to add a dependency.
+The source code file has the following content in `main.rs`.  It looks a lot like Python or any other modern language and this function prints a message.
+
+```
+fn main() {
+    println!("Hello, world MLOPs!");
+}
+```
+
+To run the project you cd into hello and run `cargo run` i.e. `cd hello && cargo run`.  The output looks like the following:
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/hello (main ✗) $ cargo run
+   Compiling hello v0.1.0 (/workspaces/rust-mlops-template/hello)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.36s
+     Running `target/debug/hello`
+Hello, world MLOPs!
+```
+
+To run without all of the noise:  `cargo run --quiet`.
+To run the binary created `./target/debug/hello`
+
+
+### First Big Project:  Deduplication Command-Line Tool
 
 I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  
 
@@ -50,8 +106,8 @@ I have written command-line deduplication tools in many languages so this is wha
 * [Rust Machine Learning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 * [Rust Async Book](https://github.com/rust-lang/async-book)
 * [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
-* [Command-Line Rust](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
-
+* [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
+* [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
 
 ### Authoring Tools
 
