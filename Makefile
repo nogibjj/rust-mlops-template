@@ -2,7 +2,7 @@ install:
 	@echo "Updating rust toolchain"
 	rustup update stable
 	rustup default stable
-	
+
 rust-version:
 	@echo "Rust command-line utility versions:"
 	rustc --version 			#rust compiler
