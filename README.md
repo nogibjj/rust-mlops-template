@@ -145,4 +145,7 @@ I have written command-line deduplication tools in many languages so this is wha
 
 ### Authoring Tools
 
+One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.e. the goal is MLOps vs interactive notebooks)
+
 * [mdBook](https://rust-lang.github.io/mdBook/)
+* [Quarto](https://quarto.org/)
