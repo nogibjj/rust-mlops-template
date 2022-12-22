@@ -12,7 +12,7 @@
 		"ghcr.io/devcontainers/features/rust:1": {},
 		"ghcr.io/eitsupi/devcontainer-features/mdbook:0": {},
 		"ghcr.io/guiyomh/features/vim:0": {}
-	}
+	},
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
