@@ -9,3 +9,7 @@ rust-version:
 format:
 	@echo "Formatting all projects with cargo"
 	./format.sh
+
+lint:
+	@echo "Linting all projects with cargo"
+	./lint.sh

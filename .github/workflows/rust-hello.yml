@@ -1,21 +1,20 @@
 name: Rust CI/CD Pipeline
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 env:
   CARGO_TERM_COLOR: always
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - run: sudo apt update
     - name: Format
       run: make format
+    - name: Lint
+      run: make lint
+    
 
