@@ -4,7 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-clap = "4.0.32"
+clap = {version="4.0.32", features=["derive"]}
+walkdir = "2.3.2"
+md5 = "0.7.0"
 
 [dev-dependencies]
 assert_cmd = "2"

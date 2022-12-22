@@ -154,8 +154,28 @@ clap = "4.0.32"
 assert_cmd = "2"
 ```
 
-* Next up make a test directory:  `mkdir tests` that is parallel to `src`
+* Next up make a test directory:  `mkdir tests` that is parallel to `src` and put a `cli.rs` inside
 * touch a `lib.rs` file and use this for the logic then run `cargo run`
+* Inside this project I also created a `Makefile` to easily do everything at once:
+
+```Makefile
+format:
+	cargo fmt --quiet
+
+lint:
+	cargo clippy --quiet
+
+test:
+	cargo test --quiet
+
+run:
+	cargo run --quiet
+
+all: format lint test run
+```
+
+Now as I build code, I can simply do:  `make all` and get a high quality build.
+
 
 ## Language References and Tutorials
 
