@@ -22,3 +22,5 @@ lint:
 test:
 	@echo "Testing all projects with cargo"
 	./test.sh
+
+all: format lint test

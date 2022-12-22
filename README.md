@@ -38,6 +38,7 @@ Once you install you should check to see things work:
 ```rustc --version```
 
 Other option is to run `make rust-version` which checks both the cargo and rust version.
+To run everything locally do:  `make all` and this will format/lint/test all projects in this repository.
 
 ### Rust CLI Tools Ecosystem
 
@@ -123,6 +124,8 @@ jobs:
     - name: Test
       run: make test
 ```
+
+To run everything locally do:  `make all`.
 
 
 ### First Big Project:  Deduplication Command-Line Tool
