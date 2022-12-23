@@ -1,6 +1,5 @@
 //walks a filesystem and finds duplicate files
 
-use md5;
 use std::collections::HashMap;
 use std::error::Error;
 use walkdir::WalkDir;
@@ -23,7 +22,6 @@ pub fn checksum(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, Box<
         let checksum = md5::compute(std::fs::read(&file)?);
         let checksum = format!("{:x}", checksum);
         checksums.entry(checksum).or_insert(Vec::new()).push(file);
-
     }
     Ok(checksums)
 }
