@@ -343,6 +343,8 @@ Run `make all` then test out the route by adding two numbers at /add/2/2
 
 ### Hugging Face Example
 
+![hugging-face-summarize](https://user-images.githubusercontent.com/58792/209409563-d47d4cbb-c4e6-4936-936d-62f2a95a7b8f.png)
+
 * Uses [rust-bert crate](https://crates.io/crates/rust-bert)
 * Create new project `cargo new hfdemo` and cd into it:  `cd hfdemo`
 * Create a new library file: `touch src/lib.rs`
