@@ -231,6 +231,9 @@ Next things to complete for dedupe (in another repo):
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 
+### Data Frames
+
+* [Polars](https://www.pola.rs/)
 
 ### Authoring Tools
 
