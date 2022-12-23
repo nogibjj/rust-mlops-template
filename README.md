@@ -339,6 +339,7 @@ all: format lint test run
 
 Run `make all` then test out the route by adding two numbers at /add/2/2
 
+![actix-microservice](https://user-images.githubusercontent.com/58792/209396207-7705bd3f-db5f-410c-9805-98b449b77d07.png)
 
 
 ## Language References and Tutorials
