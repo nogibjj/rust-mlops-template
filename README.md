@@ -231,6 +231,12 @@ Next things to complete for dedupe (in another repo):
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 
+### Web Microservices and Serverless
+
+* [Docker + Actix](https://github.com/patrick-fitzgerald/actix-web-docker-example)
+* [Actix](https://actix.rs/docs/application)
+* [AWS Lambda Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/lambda.html)
+
 ### Data Frames
 
 * [Polars](https://www.pola.rs/)
