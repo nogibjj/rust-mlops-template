@@ -217,6 +217,130 @@ Next things to complete for dedupe (in another repo):
 * Descriptive Statistics on a well known dataset using https://www.pola.rs/[Polars] inside a CLI
 * Train a model with PyTorch (probably via [bindings to Rust](https://github.com/LaurentMazare/tch-rs))
 
+### Actix Microservice
+
+* Refer to [Actix getting started guide](https://actix.rs/docs/getting-started)
+* `cargo new calc && cd calc`
+* add dependency to `Cargo.toml`
+
+```toml
+[package]
+name = "calc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+```
+
+* create a `src/lib.rs` and place inside
+
+```rust
+//calculator functions
+
+//Add two numbers
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+//Subtract two numbers
+pub fn subtract(a: i32, b: i32) -> i32 {
+    a - b
+}
+
+//Multiply two numbers
+pub fn multiply(a: i32, b: i32) -> i32 {
+    a * b
+}
+
+//Divide two numbers
+pub fn divide(a: i32, b: i32) -> i32 {
+    a / b
+}
+```
+
+In the `main.rs` put the following:
+
+```rust
+//Calculator Microservice
+use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
+
+#[get("/")]
+async fn index() -> impl Responder {
+    HttpResponse::Ok().body("This is a calculator microservice")
+}
+
+//library add route using lib.rs
+#[get("/add/{a}/{b}")]
+async fn add(info: web::Path<(i32, i32)>) -> impl Responder {
+    let result = calc::add(info.0, info.1);
+    HttpResponse::Ok().body(result.to_string())
+}
+
+//library subtract route using lib.rs
+#[get("/subtract/{a}/{b}")]
+async fn subtract(info: web::Path<(i32, i32)>) -> impl Responder {
+    let result = calc::subtract(info.0, info.1);
+    HttpResponse::Ok().body(result.to_string())
+}
+
+//library multiply route using lib.rs
+#[get("/multiply/{a}/{b}")]
+async fn multiply(info: web::Path<(i32, i32)>) -> impl Responder {
+    let result = calc::multiply(info.0, info.1);
+    HttpResponse::Ok().body(result.to_string())
+}
+
+//library divide route using lib.rs
+#[get("/divide/{a}/{b}")]
+async fn divide(info: web::Path<(i32, i32)>) -> impl Responder {
+    let result = calc::divide(info.0, info.1);
+    HttpResponse::Ok().body(result.to_string())
+}
+
+//run it
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    HttpServer::new(|| {
+        App::new()
+            .service(index)
+            .service(add)
+            .service(subtract)
+            .service(multiply)
+            .service(divide)
+    })
+    .bind(("127.0.0.1", 8080))?
+    .run()
+    .await
+}
+
+```
+
+Next, use a `Makefile` to ensure a simple workflow
+
+```Makefile
+format:
+	cargo fmt --quiet
+
+lint:
+	cargo clippy --quiet
+
+test:
+	cargo test --quiet
+
+run:
+	cargo run 
+
+all: format lint test run
+
+```
+
+Run `make all` then test out the route by adding two numbers at /add/2/2
+
+
+
 ## Language References and Tutorials
 
 * [Comprehensive Rust Course Google](https://google.github.io/comprehensive-rust/)
@@ -250,3 +374,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [mdBook](https://rust-lang.github.io/mdBook/)
 * [Quarto](https://quarto.org/)
+
+### Linux Tools
+
+* [Great example of a cross-platform tool in Rust](https://github.com/GyulyVGC/sniffnet)
