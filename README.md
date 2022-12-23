@@ -1,6 +1,5 @@
-[![Codespaces Prebuilds](https://github.com/nogibjj/rust-mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/nogibjj/rust-mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds)
-[![Rust build and test for `hello` directory](https://github.com/nogibjj/rust-mlops-template/actions/workflows/rust-hello.yml/badge.svg)](https://github.com/nogibjj/rust-mlops-template/actions/workflows/rust-hello.yml)
 
+[![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust-hello.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust-hello.yml)
 
 # rust-mlops-template
 A work in progress to build out solutions in Rust for MLOPs
@@ -39,6 +38,7 @@ Once you install you should check to see things work:
 ```rustc --version```
 
 Other option is to run `make rust-version` which checks both the cargo and rust version.
+To run everything locally do:  `make all` and this will format/lint/test all projects in this repository.
 
 ### Rust CLI Tools Ecosystem
 
@@ -125,13 +125,82 @@ jobs:
       run: make test
 ```
 
+To run everything locally do:  `make all`.
 
 ### First Big Project:  Deduplication Command-Line Tool
 
 I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  
 
-* Walk the filesystem and create a checksum for each file
-* If the checksum matches an existing checksum, then mark it as a duplicate file
+1. Walk the filesystem and create a checksum for each file
+2. If the checksum matches an existing checksum, then mark it as a duplicate file
+
+*Getting Started*
+
+* Create new project: `crate new dedupe`
+* Check latest clap version: https://crates.io/crates/clap and put this version in the `Cargo.toml`
+The file should look similar to this.
+
+
+```toml
+[package]
+name = "dedupe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.0.32"
+
+[dev-dependencies]
+assert_cmd = "2"
+```
+
+* Next up make a test directory:  `mkdir tests` that is parallel to `src` and put a `cli.rs` inside
+* touch a `lib.rs` file and use this for the logic then run `cargo run`
+* Inside this project I also created a `Makefile` to easily do everything at once:
+
+```Makefile
+format:
+	cargo fmt --quiet
+
+lint:
+	cargo clippy --quiet
+
+test:
+	cargo test --quiet
+
+run:
+	cargo run --quiet
+
+all: format lint test run
+```
+
+Now as I build code, I can simply do:  `make all` and get a high quality build.
+
+Next, let's create some test files:
+
+```bash
+echo "foo" > /tmp/one.txt
+echo "foo" > /tmp/two.txt
+echo "bar" > /tmp/three.txt
+```
+
+The final version works:  `cargo run -- --path /tmp`
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/dedupe (main ✗) $ cargo run -- --path /tmp
+    Finished dev [unoptimized + debuginfo] target(s) in 0.03s
+     Running `target/debug/dedupe --path /tmp`
+Searching path: "/tmp"
+Found 5 files
+Found 1 duplicates
+Duplicate files: ["/tmp/two.txt", "/tmp/one.txt"]
+```
+
+Next things to complete:
+
+* Switch to subcommands and create a `search` and `dedupe` subcommand
+* Add better testing with sample test files
+* Figure out how to release packages for multiple OS versions in GitHub
 
 
 ## Language References and Tutorials
@@ -142,6 +211,11 @@ I have written command-line deduplication tools in many languages so this is wha
 * [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
 * [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
+
+### Deep Learning
+
+* [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
+
 
 ### Authoring Tools
 
