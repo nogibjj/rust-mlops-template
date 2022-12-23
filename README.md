@@ -196,12 +196,20 @@ Found 1 duplicates
 Duplicate files: ["/tmp/two.txt", "/tmp/one.txt"]
 ```
 
-Next things to complete:
+Next things to complete for dedupe (in another repo):
 
 * Switch to subcommands and create a `search` and `dedupe` subcommand
 * Add better testing with sample test files
 * Figure out how to release packages for multiple OS versions in GitHub
 
+### More MLOps project ideas
+
+* Query Hugging Face dataset cli
+* Summarize News CLI
+* Microservice Web Framework, trying [actix](https://actix.rs/) to start, that has a calculator API
+* Microservice Web Framework deploys pre-trained model
+* Descriptive Statistics on a well known dataset using https://www.pola.rs/[Polars] inside a CLI
+* Train a model with PyTorch (probably via [bindings to Rust](https://github.com/LaurentMazare/tch-rs))
 
 ## Language References and Tutorials
 
