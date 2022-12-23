@@ -22,7 +22,6 @@ What could #mlops and #datascience look like in 2023 without #jupyternotebook an
 
 "What would the engineer say after you had explained your problem and enumerated all the dissatisfactions in your life? He would probably tell you that life is a very hard and complicated thing; that no interface can change that; that anyone who believes otherwise is a sucker; and that if you don't like having choices made for you, you should start making your own." -Neal Stephensen
 
-
 ### Using Data (i.e. Data Science)
 
 * StackOverflow https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages[states that #rust is on 7th year as the most loved language 87% of developers want to continue developing](https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages) in and ties with Python as the most wanted technology.  Clearly there is traction.
@@ -226,6 +225,10 @@ Next things to complete for dedupe (in another repo):
 * [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
 * [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
+
+### Linux Kernel
+
+* [Rust makes way to Linux Kernel](https://thenewstack.io/rust-in-the-linux-kernel/)
 
 ### Deep Learning
 
