@@ -341,6 +341,36 @@ Run `make all` then test out the route by adding two numbers at /add/2/2
 
 ![actix-microservice](https://user-images.githubusercontent.com/58792/209396207-7705bd3f-db5f-410c-9805-98b449b77d07.png)
 
+### Hugging Face Example
+
+* Uses [rust-bert crate](https://crates.io/crates/rust-bert)
+* Create new project `cargo new hfdemo` and cd into it:  `cd hfdemo`
+* Create a new library file: `touch src/lib.rs`
+* Add packages to `Cargo.toml`
+
+```toml
+[package]
+name = "hfdemo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rust-bert = "0.19.0"
+clap = {version="4.0.32", features=["derive"]}
+wikipedia = "0.3.4"
+```
+
+The library code is in `lib.rs` and the `subcommands` from `clap` live in `main.rs`.  Here is the tool in action:
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/hfdemo (main ✗) $ cargo run sumwiki --page argentina
+    Finished dev [unoptimized + debuginfo] target(s) in 4.59s
+     Running `target/debug/hfdemo sumwiki --page argentina`
+Argentina is a country in the southern half of South America. It covers an area of 2,780,400 km2 (1,073,500 sq mi), making it the second-largest country in South America after Brazil. It is also the fourth-largest nation in the Americas and the eighth-largest in the world.
+```
+
+
+
 
 ## Language References and Tutorials
 
