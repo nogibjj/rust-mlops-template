@@ -212,6 +212,11 @@ Next things to complete:
 * [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
 
+### Deep Learning
+
+* [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
+
+
 ### Authoring Tools
 
 One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.e. the goal is MLOps vs interactive notebooks)
