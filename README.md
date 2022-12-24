@@ -387,6 +387,10 @@ Argentina is a country in the southern half of South America. It covers an area 
 
 * [Rust makes way to Linux Kernel](https://thenewstack.io/rust-in-the-linux-kernel/)
 
+### Systems Tools
+
+* [An extended deduplication example command-line tool](https://github.com/noahgift/rdedupe)
+
 ### Deep Learning
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
