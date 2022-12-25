@@ -1,0 +1,13 @@
+[package]
+name = "parallel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = {version="4.0.32", features=["derive"]}
+walkdir = "2.3.2"
+md5 = "0.7.0"
+rayon = "1.6.1"
+
+[dev-dependencies]
+assert_cmd = "2"
