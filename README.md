@@ -371,6 +371,107 @@ The library code is in `lib.rs` and the `subcommands` from `clap` live in `main.
 Argentina is a country in the southern half of South America. It covers an area of 2,780,400 km2 (1,073,500 sq mi), making it the second-largest country in South America after Brazil. It is also the fourth-largest nation in the Americas and the eighth-largest in the world.
 ```
 
+### Polars Example
+
+* [Example here](https://github.com/noahgift/rust-mlops-template/tree/main/polarsdf)
+
+* cd into `polarsdf` and run `cargo run`
+
+```bash
+cargo run -- sort --rows 10
+```
+You can see an example of how Polars can be used to sort a dataframe in a Rust cli program.  
+
+### Parallelism
+
+One of the outstanding features of Rust is safe, yet easy paralielism.  This project demos parallelism by benchmarking a checksum of several files.
+
+We can see how trivial it is to speed up a program with threads:
+
+Here is the function for the serial version:
+
+```rust
+// Create a checksum of each file and store in a HashMap if the checksum already exists, add the file to the vector of files with that checksum
+pub fn checksum(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, Box<dyn Error>> {
+    let mut checksums = HashMap::new();
+    for file in files {
+        let checksum = md5::compute(std::fs::read(&file)?);
+        let checksum = format!("{:x}", checksum);
+        checksums
+            .entry(checksum)
+            .or_insert_with(Vec::new)
+            .push(file);
+    }
+    Ok(checksums)
+}
+
+```
+
+
+cargo --quiet run -- serial
+```bash
+➜  parallel git:(main) ✗ time cargo --quiet run -- serial
+Serial version of the program
+d41d8cd98f00b204e9800998ecf8427e:
+        src/data/subdir/not_utils_four-score.m4a
+        src/data/not_utils_four-score.m4a
+b39d1840d7beacfece35d9b45652eee1:
+        src/data/utils_four-score3.m4a
+        src/data/utils_four-score2.m4a
+        src/data/subdir/utils_four-score3.m4a
+        src/data/subdir/utils_four-score2.m4a
+        src/data/subdir/utils_four-score5.m4a
+        src/data/subdir/utils_four-score4.m4a
+        src/data/subdir/utils_four-score.m4a
+        src/data/utils_four-score5.m4a
+        src/data/utils_four-score4.m4a
+        src/data/utils_four-score.m4a
+cargo --quiet run -- serial  0.57s user 0.02s system 81% cpu 0.729 total
+``` 
+
+vs threads
+
+```bash
+time cargo --quiet run -- parallel
+Parallel version of the program
+d41d8cd98f00b204e9800998ecf8427e:
+        src/data/subdir/not_utils_four-score.m4a
+        src/data/not_utils_four-score.m4a
+b39d1840d7beacfece35d9b45652eee1:
+        src/data/utils_four-score5.m4a
+        src/data/subdir/utils_four-score3.m4a
+        src/data/utils_four-score3.m4a
+        src/data/utils_four-score.m4a
+        src/data/subdir/utils_four-score.m4a
+        src/data/subdir/utils_four-score2.m4a
+        src/data/utils_four-score4.m4a
+        src/data/utils_four-score2.m4a
+        src/data/subdir/utils_four-score4.m4a
+        src/data/subdir/utils_four-score5.m4a
+cargo --quiet run -- parallel  0.65s user 0.04s system 262% cpu 0.262 total
+```
+Ok, so let's look at the code:
+
+```rust
+// Parallel version of checksum using rayon with a mutex to ensure
+//that the HashMap is not accessed by multiple threads at the same time
+pub fn checksum_par(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, Box<dyn Error>> {
+    let checksums = std::sync::Mutex::new(HashMap::new());
+    files.par_iter().for_each(|file| {
+        let checksum = md5::compute(std::fs::read(file).unwrap());
+        let checksum = format!("{:x}", checksum);
+        checksums
+            .lock()
+            .unwrap()
+            .entry(checksum)
+            .or_insert_with(Vec::new)
+            .push(file.to_string());
+    });
+    Ok(checksums.into_inner().unwrap())
+}
+```
+
+The main takeaway is that we use a mutex to ensure that the HashMap is not accessed by multiple threads at the same time.  This is a very common pattern in Rust.
 
 
 
@@ -403,7 +504,8 @@ Argentina is a country in the southern half of South America. It covers an area 
 
 ### Data Frames
 
-* [Polars](https://www.pola.rs/)
+* [Polars](https://www.pola.rs/).  You can see an [example here](https://github.com/noahgift/rust-mlops-template/tree/main/polarsdf).
+
 
 ### Authoring Tools
 
@@ -411,6 +513,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [mdBook](https://rust-lang.github.io/mdBook/)
 * [Quarto](https://quarto.org/)
+* [Jupyter Rust](https://github.com/google/evcxr/blob/main/evcxr_jupyter/README.md)
 
 ### Linux Tools
 
