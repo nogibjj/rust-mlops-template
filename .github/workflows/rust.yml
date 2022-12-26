@@ -1,29 +1,19 @@
-on:
-  push:
-    branches: [main]
-  pull_request:
+name: Clippy
 
-name: Code Coverage
+on: [push, pull_request]
 
 jobs:
-  coverage:
-    name: coverage
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout source
-        uses: actions/checkout@v3
-
-      - name: Install nightly toolchain
-        uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v1
+      - uses: actions-rs/toolchain@v1
         with:
-          toolchain: nightly
+          toolchain: stable
           profile: minimal
+          components: clippy, rustfmt
           override: true
-          components: llvm-tools-preview
-
-      - name: Install cargo-llvm-cov
-        uses: taiki-e/install-action@cargo-llvm-cov
-
-      - name: Run lint
+      - name: Run clippy
         run: make lint
   
