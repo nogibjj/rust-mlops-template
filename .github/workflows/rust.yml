@@ -1,15 +1,24 @@
-name: Clippy
-on: [push]
+on: [push, pull_request]
+
+name: "Build, Test, Format, and Lint"
+
 jobs:
-  build:
+  multiple_toolchains:
+    name: Multiple toolchain tasks
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        rust:
+          - stable
+          - beta
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions-rs/toolchain@v1
+      - uses: actions/checkout@v2
+      - name: Install ${{ matrix.rust }} toolchain
+        uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable
           profile: minimal
-          components: clippy, rustfmt
+          toolchain: ${{ matrix.rust }}
           override: true
-      - name: Run clippy
-        run: make lint
+          components: rustfmt, clippy
+
+  
