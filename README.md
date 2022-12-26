@@ -216,6 +216,10 @@ Next things to complete:
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 
+### Command-Line Tools
+
+* [indicatif progress bar](https://github.com/console-rs/indicatif)
+* [Clap command-line parser](https://crates.io/crates/clap)
 
 ### Authoring Tools
 
