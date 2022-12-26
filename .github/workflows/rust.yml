@@ -1,24 +1,29 @@
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
-name: "Build, Test, Format, and Lint"
+name: Code Coverage
 
 jobs:
-  multiple_toolchains:
-    name: Multiple toolchain tasks
+  coverage:
+    name: coverage
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        rust:
-          - stable
-          - beta
     steps:
-      - uses: actions/checkout@v2
-      - name: Install ${{ matrix.rust }} toolchain
+      - name: checkout source
+        uses: actions/checkout@v3
+
+      - name: Install nightly toolchain
         uses: actions-rs/toolchain@v1
         with:
+          toolchain: nightly
           profile: minimal
-          toolchain: ${{ matrix.rust }}
           override: true
-          components: rustfmt, clippy
+          components: llvm-tools-preview
 
+      - name: Install cargo-llvm-cov
+        uses: taiki-e/install-action@cargo-llvm-cov
+
+      - name: Run lint
+        run: make lint
   
