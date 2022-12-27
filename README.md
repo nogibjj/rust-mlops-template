@@ -1,5 +1,4 @@
-
-[![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust-hello.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust-hello.yml)
+[![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
 A work in progress to build out solutions in Rust for MLOPs
