@@ -520,3 +520,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 ### Linux Tools
 
 * [Great example of a cross-platform tool in Rust](https://github.com/GyulyVGC/sniffnet)
+
+### Python and Rust integration
+
+* [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
