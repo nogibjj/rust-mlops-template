@@ -10,7 +10,7 @@ use humansize::{format_size, DECIMAL};
     version = "1.0",
     author = "Noah Gift",
     about = "Finds out information about AWS S3",
-    after_help = "Example: awsmetas3"
+    after_help = "Example: awsmetas3 account-size"
 )]
 struct Cli {
     #[clap(subcommand)]
@@ -20,7 +20,10 @@ struct Cli {
 #[derive(Parser)]
 enum Commands {
     Buckets {},
-    AccountSize {},
+    AccountSize {
+        #[clap(short, long)]
+        verbose: Option<bool>,
+    },
 }
 
 #[tokio::main]
@@ -37,8 +40,10 @@ async fn main() {
         /*print total size of all buckets in human readable format
         Use list_bucket_sizes to get a list of all buckets in an AWS S3 account
         */
-        Some(Commands::AccountSize {}) => {
-            let bucket_sizes = awsmetas3::list_bucket_sizes(&client).await.unwrap();
+        Some(Commands::AccountSize { verbose }) => {
+            let bucket_sizes = awsmetas3::list_bucket_sizes(&client, verbose)
+                .await
+                .unwrap();
             let total_size: i64 = bucket_sizes.iter().sum();
             println!(
                 "Total size of all buckets is {}",

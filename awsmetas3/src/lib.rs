@@ -44,16 +44,21 @@ async fn bucket_size(client: &Client, bucket: &str) -> Result<i64, Error> {
 
 /* Use list_buckets to get a list of all buckets in an AWS S3 account
 return a vector of all bucket sizes.
-If there is an error continue to the next bucket.
+If there is an error continue to the next bucket only print if verbose is true
 Return the vector
 */
-pub async fn list_bucket_sizes(client: &Client) -> Result<Vec<i64>, Error> {
+pub async fn list_bucket_sizes(client: &Client, verbose: Option<bool>) -> Result<Vec<i64>, Error> {
+    let verbose = verbose.unwrap_or(false);
     let buckets = list_buckets(client).await.unwrap();
     let mut bucket_sizes: Vec<i64> = Vec::new();
     for bucket in buckets {
         match bucket_size(client, &bucket).await {
             Ok(size) => bucket_sizes.push(size),
-            Err(e) => println!("Error: {}", e),
+            Err(e) => {
+                if verbose {
+                    println!("Error: {}", e);
+                }
+            }
         }
     }
     Ok(bucket_sizes)
