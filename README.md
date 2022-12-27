@@ -486,6 +486,13 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
 
+### Cloud Computing
+
+#### AWS
+
+* [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
+
+
 ### Linux Kernel
 
 * [Rust makes way to Linux Kernel](https://thenewstack.io/rust-in-the-linux-kernel/)
@@ -524,3 +531,4 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 ### Python and Rust integration
 
 * [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
+* [Inline Python in Rust](https://github.com/fusion-engineering/inline-python)
