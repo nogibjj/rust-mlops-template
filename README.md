@@ -489,6 +489,8 @@ The main takeaway is that we use a mutex to ensure that the HashMap is not acces
 
 ### Rust AWS S3 Bucket Metadata Information
 
+* [You can get it here](https://github.com/noahgift/rust-mlops-template/tree/main/awsmetas3)
+
 Running an optimized version was able to sum all the objects in my AWS Account about 1 second: `./target/release/awsmetas3 account-size`
 
 ![bucket summarizer](https://user-images.githubusercontent.com/58792/209720447-ebabb46f-3047-47f9-a96e-cccee0cd22f7.png)
