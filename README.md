@@ -11,6 +11,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Simple async network example: (network discovery or chat system)
 * Rust SQLite Example
 * Rust AWS Lambda
+* Simple Rust GUI
 
 
 ## Motivation
