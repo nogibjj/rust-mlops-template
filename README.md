@@ -128,7 +128,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
+    - uses: actions-rs/toolchain@v1
+      with:
+          toolchain: stable
+          profile: minimal
+          components: clippy, rustfmt
+          override: true
     - name: update linux
       run: sudo apt update 
     - name: update Rust
@@ -141,6 +147,8 @@ jobs:
       run: make lint
     - name: Test
       run: make test
+    
+
 ```
 
 To run everything locally do:  `make all`.
