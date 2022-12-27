@@ -3,6 +3,16 @@
 # rust-mlops-template
 A work in progress to build out solutions in Rust for MLOPs
 
+## Demo Hitlist (Will Solve hopefully almost every day/weekly)
+
+* Do an [inline python example](https://github.com/fusion-engineering/inline-python)
+* Train a model in PyTorch with CPU:  https://github.com/LaurentMazare/tch-rs
+* Train a model in PyTorch with GPU: https://github.com/LaurentMazare/tch-rs
+* Simple async network example: (network discovery or chat system)
+* Rust SQLite Example
+* Rust AWS Lambda
+
+
 ## Motivation
 
 One of the key goals of this project is to determine workflows that do not involve the #jcpennys (Jupyter, Conda, Pandas, Numpy, Sklearn) stack for #mlops. In particular I am not a fan of the conda installation tool (it is superfluous as [I demonstrate in the Python MLOps Template](https://github.com/nogibjj/mlops-template)) vs containerized workflows that use the Python Standard Library (Docker + pip + virtualenv) and this is a good excuse to find other solutions outside of that stack.  For example:
