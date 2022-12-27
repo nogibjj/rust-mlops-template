@@ -12,6 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions-rs/toolchain@v1
+      with:
+          toolchain: stable
+          profile: minimal
+          components: clippy, rustfmt
+          override: true
     - name: update linux
       run: sudo apt update 
     - name: update Rust
