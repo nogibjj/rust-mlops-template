@@ -543,3 +543,11 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
 * [Inline Python in Rust](https://github.com/fusion-engineering/inline-python)
+
+### GUI
+
+* [egui](https://github.com/emilk/egui)
+* [eframe](https://crates.io/crates/eframe)
+* [iced](https://crates.io/crates/iced)
+
+
