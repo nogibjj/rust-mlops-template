@@ -11,7 +11,6 @@ A work in progress to build out solutions in Rust for MLOPs
 * Simple async network example: (network discovery or chat system)
 * Rust SQLite Example
 * Rust AWS Lambda
-* Rust AWS S3 Bucket Metadata Information
 * Simple Rust GUI
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
 * Fast Keyword Extraction
@@ -486,10 +485,17 @@ pub fn checksum_par(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, 
 
 The main takeaway is that we use a mutex to ensure that the HashMap is not accessed by multiple threads at the same time.  This is a very common pattern in Rust.
 
+### AWS
+
+### Rust AWS S3 Bucket Metadata Information
+
+Running an optimized version was able to sum all the objects in my AWS Account about 1 second: `./target/release/awsmetas3 account-size`
+
+![bucket summarizer](https://user-images.githubusercontent.com/58792/209720447-ebabb46f-3047-47f9-a96e-cccee0cd22f7.png)
+
 ### Build System
 
 This build system is a bit unique because it recursives many Rust repos and tests them all!
-
 
 ## Language References and Tutorials
 
