@@ -472,6 +472,9 @@ pub fn checksum_par(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, 
 
 The main takeaway is that we use a mutex to ensure that the HashMap is not accessed by multiple threads at the same time.  This is a very common pattern in Rust.
 
+### Build System
+
+This build system is a bit unique because it recursives many Rust repos and tests them all!
 
 
 ## Language References and Tutorials
