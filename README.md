@@ -13,7 +13,9 @@ A work in progress to build out solutions in Rust for MLOPs
 * Rust AWS Lambda
 * Simple Rust GUI
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
-* Fast Keyword Extraction
+* Fast Keyword Extraction (NLP)
+* Client/Server Game Architecture
+
 
 
 ## Motivation
