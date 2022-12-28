@@ -593,5 +593,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Python vs Rust](https://programming-language-benchmarks.vercel.app/python-vs-rust)
 
+### Embedded Rust
 
+* [Awesome Embedded Rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
