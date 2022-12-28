@@ -589,6 +589,9 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Rake keyword extraction](https://docs.rs/rake/latest/rake/)
 
 
+### Benchmarking
+
+* [Python vs Rust](https://programming-language-benchmarks.vercel.app/python-vs-rust)
 
 
 
