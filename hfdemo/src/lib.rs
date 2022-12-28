@@ -17,7 +17,8 @@ pub fn summarize_content(content: &str) -> String {
         .chars()
         .take(500)
         .collect::<String>()
-        .replace("\n", " ");
+        // remove newlines with spaces
+        .replace('\n', " ");
     //convert to a vector of strings
     let input = vec![input];
     //summarize the content

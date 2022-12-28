@@ -67,7 +67,12 @@ fn main() {
             let df = polarsdf::read_csv(&path);
             println!("{:?}", df.shape());
         }
-        Some(Commands::Sort { path, year, rows, order }) => {
+        Some(Commands::Sort {
+            path,
+            year,
+            rows,
+            order,
+        }) => {
             let df = polarsdf::read_csv(&path);
             let country_column_name = "Country Name";
             //select the country column and the year string passed in and return a new dataframe
@@ -78,7 +83,7 @@ fn main() {
             let df2: DataFrame = df2.drop_nulls(None).unwrap();
             //sort the dataframe by the year column and by order passed in
             let df2 = df2.sort([&year], order).unwrap();
-  
+
             //print the first "rows" of the dataframe
             println!("{:?}", df2.head(Some(rows)));
         }

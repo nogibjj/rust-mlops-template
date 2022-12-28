@@ -21,7 +21,10 @@ pub fn checksum(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, Box<
     for file in files {
         let checksum = md5::compute(std::fs::read(&file)?);
         let checksum = format!("{:x}", checksum);
-        checksums.entry(checksum).or_insert_with(Vec::new).push(file);
+        checksums
+            .entry(checksum)
+            .or_insert_with(Vec::new)
+            .push(file);
     }
     Ok(checksums)
 }
