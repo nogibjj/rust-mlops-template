@@ -537,6 +537,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 #### AWS
 
 * [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
+* [Rust AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
 
 ### Linux Kernel
 
