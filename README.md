@@ -202,6 +202,11 @@ Next things to complete:
 * Add better testing with sample test files
 * Figure out how to release packages for multiple OS versions in GitHub
 
+### Rust Client/Server Example
+
+Full Project Here: https://github.com/noahgift/rust-multiplayer-roulette-game
+<img width="822" alt="Screenshot 2022-12-27 at 7 57 24 PM" src="https://user-images.githubusercontent.com/58792/209741447-c05d3300-15df-4711-a94d-c55764ff46ff.png">
+
 
 ## Language References and Tutorials
 
