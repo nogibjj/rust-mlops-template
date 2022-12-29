@@ -9,6 +9,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Train a model in PyTorch with CPU:  https://github.com/LaurentMazare/tch-rs
 * Train a model in PyTorch with GPU: https://github.com/LaurentMazare/tch-rs
 * Serve out ONNX with a Rust web framework like Actix
+* ONNX Command-Line Tool
 * Simple async network example: (network discovery or chat system)
 * Rust SQLite Example
 * Rust AWS Lambda
@@ -599,6 +600,10 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 ### NLP
 
 * [Rake keyword extraction](https://docs.rs/rake/latest/rake/)
+
+### Onnx
+
+* [onnxruntime for Rust](https://docs.rs/onnxruntime/latest/onnxruntime/)
 
 
 ### Benchmarking
