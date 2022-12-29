@@ -8,6 +8,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Do an [inline python example](https://github.com/fusion-engineering/inline-python)
 * Train a model in PyTorch with CPU:  https://github.com/LaurentMazare/tch-rs
 * Train a model in PyTorch with GPU: https://github.com/LaurentMazare/tch-rs
+* Serve out ONNX with a Rust web framework like Actix
 * Simple async network example: (network discovery or chat system)
 * Rust SQLite Example
 * Rust AWS Lambda
