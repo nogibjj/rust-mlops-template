@@ -22,6 +22,9 @@ A work in progress to build out solutions in Rust for MLOPs
 * Building a search engine in Rust
 * Building a web server in Rust
 * Building a batch processing systems in Rust
+* Build a command-line chat system
+* Build a locate clone
+* Build a load-testing tool
 
 ## Motivation
 
