@@ -15,6 +15,13 @@ A work in progress to build out solutions in Rust for MLOPs
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
 * Fast Keyword Extraction (NLP)
 
+### Advanced Aspirational Demos
+
+* Building a database in Rust
+* Building a search engine in Rust
+* Building a web server in Rust
+* Building a batch processing systems in Rust
+
 ## Motivation
 
 One of the key goals of this project is to determine workflows that do not involve the #jcpennys (Jupyter, Conda, Pandas, Numpy, Sklearn) stack for #mlops. In particular I am not a fan of the conda installation tool (it is superfluous as [I demonstrate in the Python MLOps Template](https://github.com/nogibjj/mlops-template)) vs containerized workflows that use the Python Standard Library (Docker + pip + virtualenv) and this is a good excuse to find other solutions outside of that stack.  For example:
