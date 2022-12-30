@@ -605,6 +605,9 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [onnxruntime for Rust](https://docs.rs/onnxruntime/latest/onnxruntime/)
 
+### Static Web
+
+* [Zola](https://www.getzola.org/)
 
 ### Benchmarking
 
