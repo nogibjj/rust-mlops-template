@@ -618,6 +618,12 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Python vs Rust](https://programming-language-benchmarks.vercel.app/python-vs-rust)
 https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
+
+### Testing Tools
+
+* [Fuzz Testing Rust](https://github.com/loiclec/fuzzcheck-rs)
+
+
 ### Embedded Rust
 
 * [Awesome Embedded Rust](https://github.com/rust-embedded/awesome-embedded-rust)
