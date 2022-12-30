@@ -537,12 +537,17 @@ This build system is a bit unique because it recursives many Rust repos and test
 ## Language References and Tutorials
 
 * [Comprehensive Rust Course Google](https://google.github.io/comprehensive-rust/)
-* [Rust Machine Learning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
+
 * [Rust Async Book](https://github.com/rust-lang/async-book)
 * [52 Weeks of Rust](https://github.com/nogibjj/52-weeks-rust)
 * [Command-Line Rust Book](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html)
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
 * [awesome rust](https://crates.io/crates/awesome-rust)
+
+### MLOps/ML Engineering and Data Science
+
+* [best-of-ml-rust](https://github.com/e-tornike/best-of-ml-rust)
+* [Awesome-Rust-MachineLearning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 
 ### Cloud Computing
 
