@@ -164,6 +164,15 @@ jobs:
 
 To run everything locally do:  `make all`.
 
+### Simple Marco-Polo Game
+
+Change into `MarcoPolo` directory and run `cargo run -- play --name Marco` and you should see the following output:
+
+```bash
+Polo
+```
+
+
 ### First Big Project:  Deduplication Command-Line Tool
 
 I have written command-line deduplication tools in many languages so this is what I choose to build a substantial example. The general approach I use is as follows:  
