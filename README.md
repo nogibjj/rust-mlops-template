@@ -16,6 +16,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Simple Rust GUI
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
 * Fast Keyword Extraction (NLP)
+* Containerized Rust Applications:  both big and small
 
 ### Advanced Aspirational Demos
 
@@ -632,6 +633,9 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 * [Fuzz Testing Rust](https://github.com/loiclec/fuzzcheck-rs)
 
+### Containerized Rust
+
+* [Building containerized applications with Rust](https://github.com/emk/rust-musl-builder)
 
 ### Embedded Rust
 
