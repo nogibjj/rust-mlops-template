@@ -544,6 +544,18 @@ A bigger example lives here:  https://github.com/noahgift/rust-multiplayer-roule
 
 * [Working Containerized Rust CLI Example](https://github.com/noahgift/rust-docker-cli)
 
+```Dockerfile
+FROM rust:latest as builder
+ENV APP containerized_marco_polo_cli
+WORKDIR /usr/src/$APP
+COPY . .
+RUN cargo install --path .
+ 
+FROM debian:buster-slim
+RUN apt-get update && rm -rf /var/lib/apt/lists/*
+COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
+ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
+```
 
 ### Build System
 
