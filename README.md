@@ -16,7 +16,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Simple Rust GUI
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
 * Fast Keyword Extraction (NLP)
-* Containerized Rust Applications:  both big and small
+
 
 ### Advanced Aspirational Demos
 
@@ -539,6 +539,11 @@ Example lives here:  https://github.com/noahgift/rust-mlops-template/tree/main/r
 <img width="822" alt="Screenshot 2022-12-27 at 7 57 24 PM" src="https://user-images.githubusercontent.com/58792/209741584-d96ebc91-00a8-4f7d-8fca-9f565318aa9f.png">
 
 A bigger example lives here:  https://github.com/noahgift/rust-multiplayer-roulette-game
+
+### Containerized Rust Applications
+
+* [Working Containerized Rust CLI Example](https://github.com/noahgift/rust-docker-cli)
+
 
 ### Build System
 
