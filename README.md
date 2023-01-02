@@ -581,6 +581,7 @@ ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
 ### Tensorflow Rust Bindings
 
 * [See tf-rust-example](https://github.com/noahgift/rust-mlops-template/tree/main/tf-rust-example)
+<img width="919" alt="Screenshot 2023-01-02 at 5 59 48 PM" src="https://user-images.githubusercontent.com/58792/210283521-b9d9ddf3-54c1-4bcf-bd6b-83a4a9d9e48d.png">
 
 ```rust
 /*Rust Tensorflow Hello World */
