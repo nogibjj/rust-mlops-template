@@ -582,7 +582,7 @@ ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
 
 * [See tf-rust-example](https://github.com/noahgift/rust-mlops-template/tree/main/tf-rust-example)
 
-```bash
+```rust
 /*Rust Tensorflow Hello World */
 
 extern crate tensorflow;
