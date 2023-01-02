@@ -617,6 +617,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 ### Linux Tools
 
 * [Great example of a cross-platform tool in Rust](https://github.com/GyulyVGC/sniffnet)
+* [List of Popular Rust based command-line tools](https://zaiste.net/posts/shell-commands-rust/)
 
 ### Python and Rust integration
 
