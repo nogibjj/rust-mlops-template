@@ -514,6 +514,27 @@ pub fn checksum_par(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, 
 
 The main takeaway is that we use a mutex to ensure that the HashMap is not accessed by multiple threads at the same time.  This is a very common pattern in Rust.
 
+### Logging in Rust Example
+
+cd into `clilog` and type: `cargo run -- --level TRACE`
+
+<img width="933" alt="Screenshot 2023-01-02 at 8 58 38 AM" src="https://user-images.githubusercontent.com/58792/210241347-a055a3d8-0dc7-4a68-ae2a-71195e91c63e.png">
+
+
+```bash
+//function returns a random fruit and logs it to the console
+pub fn random_fruit() -> String {
+    //randomly select a fruit
+    let fruit = FRUITS[rand::thread_rng().gen_range(0..5)];
+    //log the fruit
+    log::info!("fruit-info: {}", fruit);
+    log::trace!("fruit-trace: {}", fruit);
+    log::warn!("fruit-warn: {}", fruit);
+    fruit.to_string()
+}
+```
+
+
 ### AWS
 
 ### Rust AWS S3 Bucket Metadata Information
