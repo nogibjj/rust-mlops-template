@@ -1,9 +1,6 @@
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
 	cargo clean &&\
 		cargo build -j 1
-
 
 format:
 	cargo fmt --quiet
