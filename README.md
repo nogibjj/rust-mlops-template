@@ -578,6 +578,39 @@ COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
 ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
 ```
 
+### Tensorflow Rust Bindings
+
+* [See tf-rust-example](https://github.com/noahgift/rust-mlops-template/tree/main/tf-rust-example)
+<img width="919" alt="Screenshot 2023-01-02 at 5 59 48 PM" src="https://user-images.githubusercontent.com/58792/210283521-b9d9ddf3-54c1-4bcf-bd6b-83a4a9d9e48d.png">
+
+```rust
+/*Rust Tensorflow Hello World */
+
+extern crate tensorflow;
+use tensorflow::Tensor;
+
+fn main() {
+    let mut x = Tensor::new(&[1]);
+    x[0] = 2i32;
+    //print the value of x
+    println!("{:?}", x[0]);
+    //print the shape of x
+    println!("{:?}", x.shape());
+    //create a multidimensional tensor
+    let mut y = Tensor::new(&[2, 2]);
+    y[0] = 1i32;
+    y[1] = 2i32;
+    y[2] = 3i32;
+    y[3] = 4i32;
+    //print the value of y
+    println!("{:?}", y[0]);
+    //print the shape of y
+    println!("{:?}", y.shape());
+}
+```
+
+
+
 ### Build System
 
 This build system is a bit unique because it recursives many Rust repos and tests them all!
@@ -615,6 +648,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 ### Deep Learning
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
+* [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
 
 ### Web Microservices and Serverless
 
