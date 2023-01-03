@@ -680,3 +680,6 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 * [Awesome Embedded Rust](https://github.com/rust-embedded/awesome-embedded-rust)
 
+### OpenAI
+
+* [OpenAI Rust Example](https://github.com/deontologician/openai-api-rust)
