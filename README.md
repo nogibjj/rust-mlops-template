@@ -648,6 +648,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 ### Deep Learning
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
+* [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
 
 ### Web Microservices and Serverless
 
