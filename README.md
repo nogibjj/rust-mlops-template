@@ -609,6 +609,13 @@ fn main() {
 }
 ```
 
+### Pytorch
+<img width="1321" alt="Screenshot 2023-01-03 at 9 45 52 AM" src="https://user-images.githubusercontent.com/58792/210380648-0a7382f9-2d6e-4fb5-92b6-ff2a43b1e10c.png">
+
+
+Pre-trained model:  cd into `pytorch-rust-example` then run:  `cargo run -- resnet18.ot Walking_tiger_female.jpg`
+
+
 
 
 ### Build System
