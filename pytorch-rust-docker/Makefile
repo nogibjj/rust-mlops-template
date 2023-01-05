@@ -11,6 +11,9 @@ lint:
 test:
 	cargo test --quiet
 
+build-docker:
+	docker build -t pytorch-rust-docker .
+
 run:
 	cargo run 
 

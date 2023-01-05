@@ -1,5 +1,9 @@
 ### Notes
 
+** Note, currently broken**
+
+`error while loading shared libraries: libtorch_cpu.so: cannot open shared object file: No such file or directory`
+
 * Using `rust-bert` to install pytorch here:  https://crates.io/crates/tch 
 * To run: `cargo run -- resnet18.ot Walking_tiger_female.jpg`
 
