@@ -18,6 +18,7 @@ format:
 
 lint:
 	@echo "Linting all projects with cargo"
+	@rustup component add clippy 2> /dev/null
 	./lint.sh
 
 test:

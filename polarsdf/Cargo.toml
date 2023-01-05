@@ -1,0 +1,8 @@
+[package]
+name = "polarsdf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = "0.26.1"
+clap = {version="4.0.32", features=["derive"]}
