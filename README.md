@@ -578,6 +578,31 @@ COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
 ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
 ```
 
+#### Containerized PyTorch Rust
+
+cd into: `pytorch-rust-docker`
+
+
+Here is the `Dockerfile`
+
+```
+FROM rust:latest as builder
+ENV APP pytorch-rust-docker
+WORKDIR /usr/src/$APP
+COPY . .
+RUN apt-get update && rm -rf /var/lib/apt/lists/*
+RUN cargo install --path .
+RUN cargo build -j 6
+```
+
+* `docker build -t pytorch-rust-docker .`
+* `docker run -it pytorch-rust-docker`
+* Next inside the container run: `cargo run -- resnet18.ot Walking_tiger_female.jpg`
+
+
+<img width="1040" alt="Screenshot 2023-01-05 at 10 12 29 AM" src="https://user-images.githubusercontent.com/58792/210814241-e86f87d4-9cb9-4ab6-90a9-5d5ddd3e545d.png">
+
+
 ### Tensorflow Rust Bindings
 
 * [See tf-rust-example](https://github.com/noahgift/rust-mlops-template/tree/main/tf-rust-example)
@@ -712,6 +737,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Testing Tools
 
 * [Fuzz Testing Rust](https://github.com/loiclec/fuzzcheck-rs)
+* [Code Coverage Tool](https://www.nytimes.com/2023/01/05/business/economy/ftc-noncompete.html)
 
 ### Containerized Rust
 
