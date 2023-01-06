@@ -8,7 +8,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
-		"ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
+			"installCudnn": true,
+		},
 		"ghcr.io/devcontainers/features/rust:1": {},
 		"ghcr.io/eitsupi/devcontainer-features/mdbook:0": {},
 		"ghcr.io/guiyomh/features/vim:0": {}
