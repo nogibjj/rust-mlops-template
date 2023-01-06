@@ -737,6 +737,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Testing Tools
 
 * [Fuzz Testing Rust](https://github.com/loiclec/fuzzcheck-rs)
+* [Code Coverage Tool](https://www.nytimes.com/2023/01/05/business/economy/ftc-noncompete.html)
 
 ### Containerized Rust
 
