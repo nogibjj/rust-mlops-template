@@ -742,6 +742,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Containerized Rust
 
 * [Building containerized applications with Rust](https://github.com/emk/rust-musl-builder)
+* [Web Assembly + Rust containerization](https://hotg.dev/docs/hot-g/what-hotg-has-created)
 
 ### Embedded Rust
 
