@@ -412,6 +412,18 @@ The library code is in `lib.rs` and the `subcommands` from `clap` live in `main.
 Argentina is a country in the southern half of South America. It covers an area of 2,780,400 km2 (1,073,500 sq mi), making it the second-largest country in South America after Brazil. It is also the fourth-largest nation in the Americas and the eighth-largest in the world.
 ```
 
+### Hugging Face Q/A Example
+
+cd into `hfqa` and run `cargo run`
+
+```bash
+```bash
+cargo run --quiet -- answer --question "What is the best book from 1880 to read?" --context "The Adventures of Huckleberry Finn was released in 1880"
+Answer: The Adventures of Huckleberry Finn
+```
+
+
+
 ### Polars Example
 
 * [Example here](https://github.com/noahgift/rust-mlops-template/tree/main/polarsdf)
