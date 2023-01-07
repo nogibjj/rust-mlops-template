@@ -421,6 +421,7 @@ cd into `hfqa` and run `cargo run`
 cargo run --quiet -- answer --question "What is the best book from 1880 to read?" --context "The Adventures of Huckleberry Finn was released in 1880"
 Answer: The Adventures of Huckleberry Finn
 ```
+<img width="928" alt="Screenshot 2023-01-07 at 8 52 35 AM" src="https://user-images.githubusercontent.com/58792/211154766-e1061c96-7116-4f23-b5ce-79e4740c4cb8.png">
 
 
 
