@@ -17,6 +17,7 @@ A work in progress to build out solutions in Rust for MLOPs
 * Rust Whisper Tool with [C++ Bindings](https://github.com/tazz4843/whisper-rs)
 * Fast Keyword Extraction (NLP)
 * Emit Random Mediterranean Meals via CLI
+* Web Assembly Rust
 
 ### Advanced Aspirational Demos
 
