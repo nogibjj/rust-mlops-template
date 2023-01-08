@@ -428,7 +428,7 @@ Answer: The Adventures of Huckleberry Finn
 ### Hugging Face Lyrics Analysis using Zero Shot Classification with SQLite
 
 ![Screenshot 2023-01-08 at 4 26 54 PM](https://user-images.githubusercontent.com/58792/211220043-747b0146-e1b5-4ce7-b713-04e145822dd3.png)
-
+* [Listen to Maná - En El Muelle De San Blás](https://www.youtube.com/watch?v=teprNzF6J1I)
 
 ```
 @noahgift ➜ /workspaces/rust-mlops-template/sqlite-hf (main ✗) $ cargo run --quiet -- classify
