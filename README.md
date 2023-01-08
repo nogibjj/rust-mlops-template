@@ -425,6 +425,36 @@ Answer: The Adventures of Huckleberry Finn
 <img width="928" alt="Screenshot 2023-01-07 at 8 52 35 AM" src="https://user-images.githubusercontent.com/58792/211154766-e1061c96-7116-4f23-b5ce-79e4740c4cb8.png">
 
 
+### Hugging Face Lyrics Analysis using Zero Shot Classification with SQLite
+
+```
+@noahgift ➜ /workspaces/rust-mlops-template/sqlite-hf (main ✗) $ cargo run --quiet -- classify
+Classify lyrics.txt
+rock: 0.06948944181203842
+pop: 0.27735018730163574
+hip hop: 0.034089818596839905
+country: 0.7835917472839355
+latin: 0.6906086802482605
+```
+
+Print the lyrics:
+```bash
+cargo run --quiet -- lyrics | less | head
+```
+
+```bash
+Lyrics lyrics.txt
+Uh-uh-uh-uh, uh-uh
+Ella despidió a su amor
+El partió en un barco en el muelle de San Blas
+El juró que volvería
+Y empapada en llanto, ella juró que esperaría
+Miles de lunas pasaron
+Y siempre ella estaba en el muelle, esperando
+Muchas tardes se anidaron
+Se anidaron en su pelo y en sus labios
+```
+
 
 ### Polars Example
 

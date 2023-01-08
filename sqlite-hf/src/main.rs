@@ -34,7 +34,13 @@ fn main() {
         Some(Commands::Classify { file }) => {
             println!("Classify {}", file);
             let lyrics = sqlitehf::read_lyrics(&file);
-            sqlitehf::classify_lyrics(lyrics);
+            let result = sqlitehf::classify_lyrics(lyrics);
+            // print out the results in a nice format
+            for label in result {
+                for l in label {
+                    println!("{}: {}", l.text, l.score);
+                }
+            }
         }
         // use get_all_zeroshotcandidates() from lib.rs to get all candidates
         Some(Commands::Candidates {}) => {

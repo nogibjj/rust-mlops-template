@@ -26,4 +26,16 @@ Uh-uh-uh-uh, uh-uh
 Ella despidió a su amor
 ```
 
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/sqlite-hf (main ✗) $ cargo run -- classify
+   Compiling sqlitehf v0.1.0 (/workspaces/rust-mlops-template/sqlite-hf)
+    Finished dev [unoptimized + debuginfo] target(s) in 8.76s
+     Running `target/debug/sqlitehf classify`
+Classify lyrics.txt
+rock: 0.06948944181203842
+pop: 0.27735018730163574
+hip hop: 0.034089818596839905
+country: 0.7835917472839355
+latin: 0.6906086802482605
+```
 
