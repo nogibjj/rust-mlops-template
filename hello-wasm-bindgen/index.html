@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>MarcoPolo-example</title>
+    <link rel="icon" href="data:;base64,=">    
+  </head>
+
+<body>
+  <script type="module">
+    import init, {marco_polo} from "./pkg/hello_wasm_bindgen.js";
+    init()
+      .then(() => {
+        const output = document.getElementById("output");
+        output.innerHTML = marco_polo();
+      });
+  </script>
+
+</body>
+</html>
