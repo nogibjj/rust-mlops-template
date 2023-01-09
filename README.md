@@ -815,6 +815,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Python vs Rust](https://programming-language-benchmarks.vercel.app/python-vs-rust)
 https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [Rust is 150x (15,000%) faster, and uses about the same amount of memory compared with Python.](https://www.secondstate.io/articles/performance-rust-wasm/#:~:text=%F0%9F%92%AF%20Performance%20advantages%20of%20Rust%20and%20WebAssembly,-%E2%80%A2%202%20minutes&text=Rust%20is%202x%20(200%25),of%20memory%20compared%20with%20Python.)
+* [Rust 26X faster than Python sklearn](https://www.lpalmieri.com/posts/2019-12-01-taking-ml-to-production-with-rust-a-25x-speedup/)
 
 ### Testing Tools
 
