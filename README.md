@@ -737,6 +737,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Command-Line Rust Book Source Code](https://github.com/kyclark/command-line-rust.git)
 * [awesome rust](https://crates.io/crates/awesome-rust)
 * [Microsoft Learn Rust](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
+* [Rust Machine Learning Book](https://github.com/rust-ml/book)
 
 ### MLOps/ML Engineering and Data Science
 
