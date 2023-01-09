@@ -688,6 +688,38 @@ fn main() {
 Pre-trained model:  cd into `pytorch-rust-example` then run:  `cargo run -- resnet18.ot Walking_tiger_female.jpg`
 
 
+### Web Assembly in Rust
+
+Cd into `hello-wasm-bindgen` and run `make install` the `make serve`
+
+You should see something like this:
+
+![Screenshot 2023-01-09 at 11 42 29 AM](https://user-images.githubusercontent.com/58792/211361416-3203edf5-fdb6-4b13-91b8-9313d6aaf7bd.png)
+
+
+
+```bash
+/* hello world Rust webassembly*/
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+extern "C" {
+    fn alert(s: &str);
+}
+
+//export the function to javascript
+#[wasm_bindgen]
+pub fn marco_polo(s: &str) {
+    //if the string is "Marco" return "Polo"
+    if s == "Marco" {
+        alert("Polo");
+    }
+    //if the string is anything else return "Not Marco"
+    else {
+        alert("Not Marco");
+    }
+}
+```
 
 
 ### Build System
