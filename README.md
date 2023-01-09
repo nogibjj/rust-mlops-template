@@ -810,6 +810,10 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Zola](https://www.getzola.org/)
 
+#### Pure Rust Machine Learning
+
+* [linfa ML (a bit like sklearn)](https://github.com/rust-ml/linfa)
+
 ### Benchmarking
 
 * [Python vs Rust](https://programming-language-benchmarks.vercel.app/python-vs-rust)
