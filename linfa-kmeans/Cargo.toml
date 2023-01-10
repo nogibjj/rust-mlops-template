@@ -1,0 +1,17 @@
+[package]
+name = "linfa-kmeans"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+linfa-clustering = "0.6.1"
+linfa = "0.6.1"
+ndarray = "0.15.6"
+ndarray-npy = "0.8.1"
+ndarray-linalg = "0.16.0"
+ndarray-rand = "0.14.0"
+rand = "0.8.4"
+rand_xoshiro = "0.6.0"
+linfa-nn = "0.6.1"
+linfa-datasets = { version = "0.6.1", features = ["generate"] }
+clap = { version = "4.0.32", features = ["derive"] }
