@@ -723,6 +723,10 @@ pub fn marco_polo(s: &str) {
 }
 ```
 
+### Kmeans Example
+
+cd into `linfa-kmeans` and run `cargo run -- cluster`
+
 
 ### Build System
 
