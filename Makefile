@@ -25,4 +25,7 @@ test:
 	@echo "Testing all projects with cargo"
 	./test.sh
 
+check-gpu-linux:
+	sudo lshw -C display
+
 all: format lint test
