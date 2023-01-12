@@ -5,6 +5,9 @@ A work in progress to build out solutions in Rust for MLOPs.  Will be covered in
 
 ![Screenshot 2023-01-09 at 11 52 59 AM](https://user-images.githubusercontent.com/58792/211363136-c75619d8-16b4-4e39-903d-7d43ce379e4b.png)
 
+![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
+
+
 ## Demo Hitlist (Will Solve hopefully almost every day/weekly)
 
 * Do an [inline python example](https://github.com/fusion-engineering/inline-python)
