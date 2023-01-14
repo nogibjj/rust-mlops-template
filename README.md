@@ -473,6 +473,10 @@ Se anidaron en su pelo y en sus labios
 ```bash
 cargo run -- sort --rows 10
 ```
+
+![Screenshot 2023-01-14 at 12 21 08 PM](https://user-images.githubusercontent.com/58792/212486612-acf4040e-1772-4dbd-98d8-4ed0aaf24b96.png)
+
+
 You can see an example of how Polars can be used to sort a dataframe in a Rust cli program.  
 
 ### Parallelism
