@@ -750,6 +750,15 @@ z score: Ok([0.0, -0.0, 6.5939908998261245, 2.2719123245079786, -0.0, -0.0, -0.5
 predicted variance: -0.014761955865436382
 ```
 
+### Transcription with Whisper in Rust
+
+* Based on this https://github.com/ggerganov/whisper.cpp[CPP version]
+* Rust bindings here:  https://github.com/tazz4843/whisper-rs
+
+![Screenshot 2023-01-15 at 4 23 02 PM](https://user-images.githubusercontent.com/58792/212568247-45666de9-fb80-4120-8950-42a751eff258.png)
+
+
+
 ### Build System
 
 This build system is a bit unique because it recursives many Rust repos and tests them all!
