@@ -1,0 +1,12 @@
+[package]
+name = "regression-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+linfa = "0.6.1"
+linfa-datasets = { version = "0.6.1", features = ["diabetes"] }
+linfa-elasticnet = "0.6.1"
+clap = { version = "4.0.32", features = ["derive"] }
