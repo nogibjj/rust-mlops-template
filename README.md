@@ -758,6 +758,11 @@ predicted variance: -0.014761955865436382
 ![Screenshot 2023-01-15 at 4 23 02 PM](https://user-images.githubusercontent.com/58792/212568247-45666de9-fb80-4120-8950-42a751eff258.png)
 
 
+### Rust PyTorch Saturating GPU
+
+* Example repo here:  https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#pytorch-rust-gpu-example
+![Screenshot 2023-01-16 at 5 23 15 PM](https://user-images.githubusercontent.com/58792/212774485-af74b43e-7514-46cd-a575-5cea1ccfb45f.png)
+
 
 ### Build System
 
