@@ -763,6 +763,11 @@ predicted variance: -0.014761955865436382
 * Example repo here:  https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#pytorch-rust-gpu-example
 ![Screenshot 2023-01-16 at 5 23 15 PM](https://user-images.githubusercontent.com/58792/212774485-af74b43e-7514-46cd-a575-5cea1ccfb45f.png)
 
+### Rust PyTorch MNIST Saturating GPU
+
+* Example repo here: https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#mnist-convolutional-neural-network
+![Screenshot 2023-01-16 at 5 57 59 PM](https://user-images.githubusercontent.com/58792/212777601-2a2acb71-c94b-4d76-8913-702fb429bb13.png)
+
 
 ### Build System
 
