@@ -1,3 +1,4 @@
+
 [![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
@@ -899,6 +900,12 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Embedded Rust
 
 * [Awesome Embedded Rust](https://github.com/rust-embedded/awesome-embedded-rust)
+
+### benchmark
+
+https://bheisler.github.io/criterion.rs/book/criterion_rs.html
+
+
 
 ### OpenAI
 
