@@ -1,3 +1,4 @@
+
 [![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
@@ -734,6 +735,58 @@ pub fn marco_polo(s: &str) {
 
 cd into `linfa-kmeans` and run `cargo run -- cluster`
 
+### Lasso Regression CLI
+![Screenshot 2023-01-15 at 9 53 25 AM](https://user-images.githubusercontent.com/58792/212548501-51993174-c294-4d8e-91b1-5f795de903a1.png)
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/regression-cli (main ✗) $ cargo run -- train --ratio .9
+    Finished dev [unoptimized + debuginfo] target(s) in 0.05s
+     Running `target/debug/regression-cli train --ratio .9`
+Training ratio: 0.9
+intercept:  152.1586901763224
+params: [0, -0, 503.58067499818077, 167.75801599203626, -0, -0, -121.6828192430516, 0, 427.9593531331433, 6.412796328606638]
+z score: Ok([0.0, -0.0, 6.5939908998261245, 2.2719123245079786, -0.0, -0.0, -0.5183690897253823, 0.0, 2.2777581181031765, 0.0858408096568952], shape=[10], strides=[1], layout=CFcf (0xf), const ndim=1)
+predicted variance: -0.014761955865436382
+```
+
+### Transcription with Whisper in Rust
+
+* Based on this https://github.com/ggerganov/whisper.cpp[CPP version]
+* Rust bindings here:  https://github.com/tazz4843/whisper-rs
+
+![Screenshot 2023-01-15 at 4 23 02 PM](https://user-images.githubusercontent.com/58792/212568247-45666de9-fb80-4120-8950-42a751eff258.png)
+
+
+### Rust PyTorch Saturating GPU
+
+* Example repo here:  https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#pytorch-rust-gpu-example
+![Screenshot 2023-01-16 at 5 23 15 PM](https://user-images.githubusercontent.com/58792/212774485-af74b43e-7514-46cd-a575-5cea1ccfb45f.png)
+
+### Rust PyTorch MNIST Saturating GPU
+
+* Example repo here: https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#mnist-convolutional-neural-network
+![Screenshot 2023-01-16 at 5 57 59 PM](https://user-images.githubusercontent.com/58792/212777601-2a2acb71-c94b-4d76-8913-702fb429bb13.png)
+
+
+### Rust Stable Diffusion Demo
+
+You can create it this repo for more info: https://github.com/nogibjj/rust-pytorch-gpu-template#stable-diffusion-demo
+
+* clone this repo:  https://github.com/LaurentMazare/diffusers-rs
+* Follow these setup instructions: https://github.com/LaurentMazare/diffusers-rs#clip-encoding-weights
+
+After all the weights are downloaded run:
+
+`cargo run --example stable-diffusion --features clap -- --prompt "A very rusty robot holding a fire torch to notebooks"`
+![Screenshot 2023-01-16 at 5 57 59 PM](https://user-images.githubusercontent.com/58792/212777548-0d9619e8-ad1b-4cc9-8871-505b0b5b2345.png)
+
+Stable Diffusion 2.1 Pegging GPU
+![Screenshot 2023-01-17 at 9 30 47 AM](https://user-images.githubusercontent.com/58792/212926307-351db4bc-46ff-4e8d-8630-ce996dca65c9.png)
+
+Rusty Robot Torching Notebooks
+![sd_final](https://user-images.githubusercontent.com/58792/212926379-d460a54c-29cf-42bb-801a-29e50557369e.png)
+
+
 ### Randomly Select Rust Crates To Work On
 
 cd into `rust-ideas`
@@ -861,6 +914,12 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Embedded Rust
 
 * [Awesome Embedded Rust](https://github.com/rust-embedded/awesome-embedded-rust)
+
+### benchmark
+
+https://bheisler.github.io/criterion.rs/book/criterion_rs.html
+
+
 
 ### OpenAI
 
