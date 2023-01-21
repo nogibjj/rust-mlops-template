@@ -1,0 +1,10 @@
+[package]
+name = "rust-ideas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crates_io_api = "0.8.1"
+rand = "0.8.5"
+clap = {version="4.0.32", features=["derive"]}
+serde = {version="1.0.130", features=["derive"]}
