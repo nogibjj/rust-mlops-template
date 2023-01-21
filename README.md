@@ -734,6 +734,21 @@ pub fn marco_polo(s: &str) {
 
 cd into `linfa-kmeans` and run `cargo run -- cluster`
 
+### Randomly Select Rust Crates To Work On
+
+cd into `rust-ideas`
+
+`cargo run -- --help`
+`cargo run -- popular --number 4`
+`cargo run -- random`
+
+```bash
+@noahgift ➜ /workspaces/rust-mlops-template/rust-ideas (main ✗) $ cargo run -- random
+    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/rust-ideas random`
+Random crate: "libc"
+```
+
 
 ### Build System
 
