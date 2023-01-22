@@ -2,9 +2,7 @@
 [![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
-A work in progress to build out solutions in Rust for MLOPs.  Will be covered in the O'Reilly book [Implementing MLOps in the Enterprise](https://learning.oreilly.com/library/view/implementing-mlops-in/9781098136574/).
-
-![Screenshot 2023-01-09 at 11 52 59 AM](https://user-images.githubusercontent.com/58792/211363136-c75619d8-16b4-4e39-903d-7d43ce379e4b.png)
+A work in progress to build out solutions in Rust for MLOPs.  
 
 ![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
 
