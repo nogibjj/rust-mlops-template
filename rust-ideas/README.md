@@ -16,3 +16,4 @@ cd into `rust-ideas`
      Running `target/debug/rust-ideas random`
 Random crate: "libc"
 ```
+<img width="1189" alt="Screenshot 2023-01-21 at 10 55 59 AM" src="https://user-images.githubusercontent.com/58792/213875335-52f547b1-652b-40e9-b061-a24fd04d160b.png">
