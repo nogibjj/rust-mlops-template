@@ -2,9 +2,7 @@
 [![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
-A work in progress to build out solutions in Rust for MLOPs.  Will be covered in the O'Reilly book [Implementing MLOps in the Enterprise](https://learning.oreilly.com/library/view/implementing-mlops-in/9781098136574/).
-
-![Screenshot 2023-01-09 at 11 52 59 AM](https://user-images.githubusercontent.com/58792/211363136-c75619d8-16b4-4e39-903d-7d43ce379e4b.png)
+A work in progress to build out solutions in Rust for MLOPs.  
 
 ![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
 
@@ -802,6 +800,13 @@ cd into `rust-ideas`
 Random crate: "libc"
 ```
 
+### Onnx Example
+
+cd into `OnnxDemo` and run `make install` then `cargo run -- infer` which invokes a squeezenet model.
+
+<img width="490" alt="Screenshot 2023-01-22 at 9 33 33 AM" src="https://user-images.githubusercontent.com/58792/213921431-e2d473c3-e76e-4884-91d3-6f92639aa324.png">
+
+
 
 ### Build System
 
@@ -842,6 +847,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 * [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
+* [Rust PyTorch with Actix-Web Example](https://github.com/kykosic/actix-pytorch-example)
 
 ### Web Microservices and Serverless
 
@@ -919,7 +925,14 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 
+### ZSH
 
+* [Rust ZSH modules](https://github.com/Diegovsky/zsh-module-rs)
+
+### Time Series Rust
+
+* [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
+* [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
 
 ### OpenAI
 
