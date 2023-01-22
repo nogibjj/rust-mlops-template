@@ -802,6 +802,13 @@ cd into `rust-ideas`
 Random crate: "libc"
 ```
 
+### Onnx Example
+
+cd into `OnnxDemo` and run `make install` then `cargo run -- infer` which invokes a squeezenet model.
+
+<img width="490" alt="Screenshot 2023-01-22 at 9 33 33 AM" src="https://user-images.githubusercontent.com/58792/213921431-e2d473c3-e76e-4884-91d3-6f92639aa324.png">
+
+
 
 ### Build System
 
