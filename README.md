@@ -849,6 +849,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 * [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
+* [Rust PyTorch with Actix-Web Example](https://github.com/kykosic/actix-pytorch-example)
 
 ### Web Microservices and Serverless
 
