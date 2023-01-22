@@ -927,7 +927,9 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 
+### ZSH
 
+* [Rust ZSH modules](https://github.com/Diegovsky/zsh-module-rs)
 
 ### OpenAI
 
