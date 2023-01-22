@@ -1,0 +1,10 @@
+[package]
+name = "pytorch-binary-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.40"
+#pytorch rust
+tch = "~0.10.1"
+clap = {version="4.0.32", features=["derive"]}
