@@ -931,6 +931,10 @@ https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 
 * [Rust ZSH modules](https://github.com/Diegovsky/zsh-module-rs)
 
+### Time Series Rust
+
+* [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
+
 ### OpenAI
 
 * [OpenAI Rust Example](https://github.com/deontologician/openai-api-rust)
