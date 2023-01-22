@@ -934,6 +934,7 @@ https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 ### Time Series Rust
 
 * [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
+* [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
 
 ### OpenAI
 
