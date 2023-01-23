@@ -600,6 +600,44 @@ Running an optimized version was able to sum all the objects in my AWS Account a
 
 ![bucket summarizer](https://user-images.githubusercontent.com/58792/209720447-ebabb46f-3047-47f9-a96e-cccee0cd22f7.png)
 
+
+### Rust AWS Lambda
+
+cd into `rust-aws-lambda`
+
+* [Rust AWS Lambda docs](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/lambda.html)
+* Install AWS VS Code plugin and configure it to use your AWS account.
+* See GitHub repo here: https://github.com/awslabs/aws-lambda-rust-runtime#deployment
+
+![Screenshot 2023-01-22 at 6 14 48 PM](https://user-images.githubusercontent.com/58792/213945722-cff92b84-0ac2-4c29-bb77-bef142c4257d.png)
+
+To deploy: `make deploy` which runs: `cargo lambda build --release`
+
+* Test inside of AWS Lambda console
+* Test locally with:
+
+```bash
+cargo lambda invoke --remote \
+  --data-ascii '{"command": "hi"}' \
+  --output-format json \
+  rust-aws-lambda
+```
+
+Result:
+```bash
+cargo lambda invoke --remote \
+                --data-ascii '{"command": "hi"}' \
+                --output-format json \
+                rust-aws-lambda
+{
+  "msg": "Command hi executed.",
+  "req_id": "1f70aff9-dc65-47be-977b-4b81bf83e7a7"
+}
+```
+
+
+
+
 ### Client-Server Example
 
 Example lives here:  https://github.com/noahgift/rust-mlops-template/tree/main/rrgame
@@ -858,6 +896,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 
 * [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
 * [Rust AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
+
+#### Azure
+
+* [Azure Rust Functions](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-other?tabs=rust%2Cmacos)
 
 ### Linux Kernel
 
