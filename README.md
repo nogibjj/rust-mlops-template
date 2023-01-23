@@ -897,6 +897,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
 * [Rust AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
 
+#### Azure
+
+* [Azure Rust Functions](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-other?tabs=rust%2Cmacos)
+
 ### Linux Kernel
 
 * [Rust makes way to Linux Kernel](https://thenewstack.io/rust-in-the-linux-kernel/)
