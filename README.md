@@ -2,7 +2,10 @@
 [![Rust CI/CD Pipeline](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml/badge.svg)](https://github.com/noahgift/rust-mlops-template/actions/workflows/rust.yml)
 
 # rust-mlops-template
-A work in progress to build out solutions in Rust for MLOPs.  
+A work in progress to build out solutions in Rust for MLOPs.
+This repo is more of a cookbook style.  For a more gentle step by step guide to MLOps with Rust, please see my [lecture notes as a Rust MDBook here](https://nogibjj.github.io/rust-tutorial/).
+
+
 
 ![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
 
