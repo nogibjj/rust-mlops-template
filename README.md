@@ -434,6 +434,10 @@ Answer: The Adventures of Huckleberry Finn
 
 ### Hugging Face Lyrics Analysis using Zero Shot Classification with SQLite
 
+![hugging-face](https://user-images.githubusercontent.com/58792/215151354-30cadb7d-c972-479d-afc7-030bd684d4d2.png)
+
+
+
 ![Screenshot 2023-01-08 at 4 26 54 PM](https://user-images.githubusercontent.com/58792/211220043-747b0146-e1b5-4ce7-b713-04e145822dd3.png)
 * [Listen to Maná - En El Muelle De San Blás](https://www.youtube.com/watch?v=teprNzF6J1I)
 
