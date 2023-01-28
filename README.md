@@ -950,6 +950,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
 * [Inline Python in Rust](https://github.com/fusion-engineering/inline-python)
+* [Red Hat:  Speed up Python using Rust](https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#create_a_new_crate)
 
 ### GUI
 
