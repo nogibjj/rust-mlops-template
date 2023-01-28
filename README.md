@@ -960,6 +960,8 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 ### Onnx
 
 * [onnxruntime for Rust](https://docs.rs/onnxruntime/latest/onnxruntime/)
+* [Build standalone executables with Rust and ONNX](https://github.com/sonos/tract)
+* [Hugging Face discussion on Rust](https://discuss.huggingface.co/t/rust-applications/23060)
 
 ### Static Web
 
