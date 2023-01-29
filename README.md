@@ -434,6 +434,10 @@ Answer: The Adventures of Huckleberry Finn
 
 ### Hugging Face Lyrics Analysis using Zero Shot Classification with SQLite
 
+![hugging-face](https://user-images.githubusercontent.com/58792/215151354-30cadb7d-c972-479d-afc7-030bd684d4d2.png)
+
+
+
 ![Screenshot 2023-01-08 at 4 26 54 PM](https://user-images.githubusercontent.com/58792/211220043-747b0146-e1b5-4ce7-b713-04e145822dd3.png)
 * [Listen to Maná - En El Muelle De San Blás](https://www.youtube.com/watch?v=teprNzF6J1I)
 
@@ -946,6 +950,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 
 * [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
 * [Inline Python in Rust](https://github.com/fusion-engineering/inline-python)
+* [Red Hat:  Speed up Python using Rust](https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#create_a_new_crate)
 
 ### GUI
 

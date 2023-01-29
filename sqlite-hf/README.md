@@ -1,5 +1,10 @@
 ## Analyze lyrics of a song with Rust and Hugging Face and SQLite
 
+
+![hugging-face](https://user-images.githubusercontent.com/58792/215151354-30cadb7d-c972-479d-afc7-030bd684d4d2.png)
+
+
+
 ```bash
  cargo run -- candidates
     Finished dev [unoptimized + debuginfo] target(s) in 0.13s
