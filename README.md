@@ -992,6 +992,9 @@ pub async fn complete_prompt(prompt: &str) -> Result<String, Box<dyn std::error:
 
 ### Containerized Actix Continuous Delivery to AWS App Runner
 
+![Screenshot 2023-01-31 at 1 47 32 PM](https://user-images.githubusercontent.com/58792/215854389-e9f5fc50-1607-4b4d-9d82-180f81c44c01.png)
+
+
 1. cd into `webdocker`
 2. build and run container (can do via `Makefile`) or
 
