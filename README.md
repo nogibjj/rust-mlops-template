@@ -990,6 +990,14 @@ pub async fn complete_prompt(prompt: &str) -> Result<String, Box<dyn std::error:
 
 ```
 
+### Command-line Data Science with Rust (Action Items)
+
+
+1. go into `dscli`
+2. Figure the way to make Polars work with `linfa`
+3. How can I make a kmeans cluster using Polars
+
+
 ### Containerized Actix Continuous Delivery to AWS App Runner
 
 1. cd into `webdocker`
