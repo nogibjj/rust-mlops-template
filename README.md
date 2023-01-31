@@ -875,6 +875,43 @@ cd into `OnnxDemo` and run `make install` then `cargo run -- infer` which invoke
 
 <img width="490" alt="Screenshot 2023-01-22 at 9 33 33 AM" src="https://user-images.githubusercontent.com/58792/213921431-e2d473c3-e76e-4884-91d3-6f92639aa324.png">
 
+### OpenAI
+
+#### Switching to Rust API Example
+
+Full working example link: [https://github.com/nogibjj/assimilate-openai/tree/main/openai](https://github.com/nogibjj/assimilate-openai/tree/main/openai)
+
+* install Rust via Rustup: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+Use Rust API for OpenAI (3rd party):  https://github.com/deontologician/openai-api-rust
+
+* Create new project: `cargo new openai` and cd into it
+* `make format` then `make lint` then `cargo run`
+
+Working Example:
+
+```bash
+(.venv) @noahgift ➜ /workspaces/assimilate-openai/openai (main) $ cargo run -- complete -t "The rain in spain"
+    Finished dev [unoptimized + debuginfo] target(s) in 0.14s
+     Running `target/debug/openai complete -t 'The rain in spain'`
+Completing: The rain in spain
+Loves gets you nowhere
+The rain in spain
+```
+
+`lib.rs`
+```rust
+/*This uses Open AI to Complete Sentences */
+
+//accets the prompt and returns the completion
+pub async fn complete_prompt(prompt: &str) -> Result<String, Box<dyn std::error::Error>> {
+    let api_token = std::env::var("OPENAI_API_KEY")?;
+    let client = openai_api::Client::new(&api_token);
+    let prompt = String::from(prompt);
+    let result = client.complete_prompt(prompt.as_str()).await?;
+    Ok(result.choices[0].text.clone())
+}
+
+```
 
 
 ### Build System
