@@ -990,6 +990,16 @@ pub async fn complete_prompt(prompt: &str) -> Result<String, Box<dyn std::error:
 
 ```
 
+### Containerized Actix Continuous Delivery to AWS App Runner
+
+1. cd into `webdocker`
+2. build and run container (can do via `Makefile`) or
+
+`docker build -t fruit .`
+`docker run -it --rm -p 8080:8080 fruit`
+
+3. push to ECR
+4. Tell AWS App Runner to autodeploy
 
 ### Build System
 
