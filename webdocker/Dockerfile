@@ -7,4 +7,6 @@ RUN cargo install --path .
 FROM debian:buster-slim
 RUN apt-get update && rm -rf /var/lib/apt/lists/*
 COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
-ENTRYPOINT [ "/usr/local/bin/containerized_marco_polo_cli" ]
+#export this actix web service to port 8080 and 0.0.0.0
+EXPOSE 8080
+CMD ["webdocker"]
