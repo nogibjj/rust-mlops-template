@@ -7,6 +7,12 @@ lint:
 test:
 	cargo test --quiet
 
+build:
+	docker build -t torch .
+
+rundocker:
+	docker run -it --rm -p 8080:8080 torch
+
 run:
 	cargo run 
 
