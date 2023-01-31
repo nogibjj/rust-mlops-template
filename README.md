@@ -469,6 +469,62 @@ Muchas tardes se anidaron
 Se anidaron en su pelo y en sus labios
 ```
 
+#### Hugging Face GPU Translation CLI
+
+Full working example here: [https://github.com/nogibjj/rust-pytorch-gpu-template/tree/main/translate](https://github.com/nogibjj/rust-pytorch-gpu-template/tree/main/translate)
+
+![building-gpu-translator-hugging-face](https://user-images.githubusercontent.com/58792/215615054-8a8d6b4b-2967-4daa-bf78-9554593f0015.png)
+
+
+Goal:  Translate a spanish song to english
+* `cargo new translate` and cd into it
+fully working GPU Hugging Face Translation CLI in Rust
+
+run it:   `time cargo run -- translate --path lyrics.txt`
+
+```rust
+/*A library that uses Hugging Face to Translate Text
+*/
+use rust_bert::pipelines::translation::{Language, TranslationModelBuilder};
+use std::fs::File;
+use std::io::Read;
+
+//build a function that reads a file and returns a string
+pub fn read_file(path: String) -> anyhow::Result<String> {
+    let mut file = File::open(path)?;
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)?;
+    Ok(contents)
+}
+
+//build a function that reads a file and returns an array of the lines of the file
+pub fn read_file_array(path: String) -> anyhow::Result<Vec<String>> {
+    let mut file = File::open(path)?;
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)?;
+    let array = contents.lines().map(|s| s.to_string()).collect();
+    Ok(array)
+}
+
+
+//build a function that reads a file and translates it
+pub fn translate_file(path: String) -> anyhow::Result<()> {
+    let model = TranslationModelBuilder::new()
+        .with_source_languages(vec![Language::Spanish])
+        .with_target_languages(vec![Language::English])
+        .create_model()?;
+    let text = read_file_array(path)?;
+    //pass in the text to the model
+    let output = model.translate(&text, None, Language::English)?;
+    for sentence in output {
+        println!("{}", sentence);
+    }
+    Ok(())
+}
+```
+
+
+
 
 ### Polars Example
 
@@ -834,6 +890,22 @@ predicted variance: -0.014761955865436382
 * Example repo here: https://github.com/nogibjj/rust-pytorch-gpu-template/blob/main/README.md#mnist-convolutional-neural-network
 ![Screenshot 2023-01-16 at 5 57 59 PM](https://user-images.githubusercontent.com/58792/212777601-2a2acb71-c94b-4d76-8913-702fb429bb13.png)
 
+### Rayon Multi-threaded GPU Stress Test CLI
+
+Stress Test CLI for both CPU and GPU PyTorch using Clap
+
+* `cargo new stress` cd into `stress`
+* To test CPU for PyTorch do: `cargo run -- cpu`
+* To test GPU for PyTorch do: `cargo run -- gpu`
+* To monitor CPU/Memory run `htop`
+* To monitor GPU run `nvidia-smi -l 1`
+* To use threaded GPU load test use: `cargo run -- tgpu`
+
+
+![stress-test-cuda-gpu-with-pytorch-rust](https://user-images.githubusercontent.com/58792/215621711-c222e59b-f4e1-4fd0-8202-339b986b4090.png)
+
+
+Full working example here: [https://github.com/nogibjj/rust-pytorch-gpu-template/tree/main/stress](https://github.com/nogibjj/rust-pytorch-gpu-template/tree/main/stress)
 
 ### Rust Stable Diffusion Demo
 
@@ -869,11 +941,16 @@ cd into `rust-ideas`
 Random crate: "libc"
 ```
 
-### Onnx Example
+### ONNX Example
 
 cd into `OnnxDemo` and run `make install` then `cargo run -- infer` which invokes a squeezenet model.
 
 <img width="490" alt="Screenshot 2023-01-22 at 9 33 33 AM" src="https://user-images.githubusercontent.com/58792/213921431-e2d473c3-e76e-4884-91d3-6f92639aa324.png">
+
+#### Sonos ONNX
+
+Verified this works and is able to invoke runtime in a portable binary: 
+[https://github.com/sonos/tract/tree/main/examples/pytorch-resnet](https://github.com/sonos/tract/tree/main/examples/pytorch-resnet)
 
 ### OpenAI
 
