@@ -1,0 +1,3 @@
+maturin
+pylint
+black

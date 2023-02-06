@@ -1012,6 +1012,56 @@ pub async fn complete_prompt(prompt: &str) -> Result<String, Box<dyn std::error:
 3. push to ECR
 4. Tell AWS App Runner to autodeploy
 
+### Mixing Python and Rust
+
+#### Using Rust Module from Python
+
+* [Pyo3](https://pyo3.rs/v0.18.0/)
+Try the getting started guide:
+
+```bash
+# (replace string_sum with the desired package name)
+$ mkdir string_sum
+$ cd string_sum
+$ python -m venv .env
+$ source .env/bin/activate
+$ pip install maturin
+```
+
+* Run `maturin init` and then run `maturin develop` or `make develop`
+* `python`
+* Run the following python code
+```python
+import string_sum
+string_sum.sum_as_string(5, 20)
+```
+The output should look like this: `'25'`
+
+#### Using Python from Rust
+
+Follow guide here: [https://pyo3.rs/v0.18.0/](https://pyo3.rs/v0.18.0/)
+
+* install `sudo apt-get install python3-dev`
+* `cargo new pyrust` and `cd pyrust`
+* tweak `Cargo.toml` and add `pyo3`
+* add source code to `main.rs`
+* `make run`
+
+```bash
+Hello vscode, I'm Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
+[GCC 10.2.1 20210110]
+```
+
+Q:  Does the target binary have Python included?
+A:  Maybe.  It does appear to be able to run Python if you go to the `target`
+`/workspaces/rust-mlops-template/pyrust/target/debug/pyrust`
+
+Follow up question, can I bring this binary to a "blank" codespace with no Python and what happens!
+
+#### Day2: Using Rust with Python
+
+Goal:  Build a high-performance Rust module and then wrap in a Python command-line tool
+
 ### Build System
 
 This build system is a bit unique because it recursives many Rust repos and tests them all!
