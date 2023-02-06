@@ -1062,6 +1062,17 @@ Follow up question, can I bring this binary to a "blank" codespace with no Pytho
 
 Goal:  Build a high-performance Rust module and then wrap in a Python command-line tool
 
+
+### Containerized Rust Examples
+
+* `cargo new tyrscontainer` and cd into `tyrscontainer`
+* copy a `Makefile` and `Dockerfile` from `webdocker`
+
+#### References
+
+* [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
+
+
 ### Build System
 
 This build system is a bit unique because it recursives many Rust repos and tests them all!
