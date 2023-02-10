@@ -1124,6 +1124,8 @@ This build system is a bit unique because it recursives many Rust repos and test
 
 * [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
 * [Rust AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
+* [EFS + Lambda (Great Use Case for Rust](https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications/)
+* [Rust uses less than half memory of Python AWS Lambda and 1.5 less duration in CPU](https://nogibjj.github.io/rust-tutorial/chapter_9.html)
 
 #### Azure
 
@@ -1148,6 +1150,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Docker + Actix](https://github.com/patrick-fitzgerald/actix-web-docker-example)
 * [Actix](https://actix.rs/docs/application)
 * [AWS Lambda Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/lambda.html)
+* [Rust AWS Lambda Blog Post](https://dev.to/aws-builders/serverless-lambdas-with-rust-on-aws-hkh)
 
 ### Data Frames
 
@@ -1231,6 +1234,10 @@ https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 
 * [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
 * [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
+
+### C++ vs Rust
+
+* [C++ vs Rust](https://www.risingwave-labs.com/blog/building-a-cloud-database-from-scratch-why-we-moved-from-cpp-to-rust/)
 
 ### OpenAI
 
