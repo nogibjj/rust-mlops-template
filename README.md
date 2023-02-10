@@ -1207,6 +1207,10 @@ https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 * [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
 * [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
 
+### C++ vs Rust
+
+* [C++ vs Rust](https://www.risingwave-labs.com/blog/building-a-cloud-database-from-scratch-why-we-moved-from-cpp-to-rust/)
+
 ### OpenAI
 
 * [OpenAI Rust Example](https://github.com/deontologician/openai-api-rust)
