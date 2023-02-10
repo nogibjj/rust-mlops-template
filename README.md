@@ -1099,6 +1099,8 @@ This build system is a bit unique because it recursives many Rust repos and test
 
 * [Sustainability with Rust](https://aws.amazon.com/blogs/opensource/sustainability-with-rust/?pg=devrust)
 * [Rust AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
+* [EFS + Lambda (Great Use Case for Rust](https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications/)
+* [Rust uses less than half memory of Python AWS Lambda and 1.5 less duration in CPU](https://nogibjj.github.io/rust-tutorial/chapter_9.html)
 
 #### Azure
 
