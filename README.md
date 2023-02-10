@@ -1068,6 +1068,31 @@ Goal:  Build a high-performance Rust module and then wrap in a Python command-li
 * `cargo new tyrscontainer` and cd into `tyrscontainer`
 * copy a `Makefile` and `Dockerfile` from `webdocker`
 
+
+Note that the rust build system container which is ~1GB is NOT in the final container image which is only 98MB.
+```Dockerfile
+FROM rust:latest as builder
+ENV APP tyrscontainer
+WORKDIR /usr/src/$APP
+COPY . .
+RUN cargo install --path .
+ 
+FROM debian:buster-slim
+RUN apt-get update && rm -rf /var/lib/apt/lists/*
+COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
+#export this actix web service to port 8080 and 0.0.0.0
+EXPOSE 8080
+CMD ["tyrscontainer"]
+````
+
+
+The final container is very small i.e. 94MB
+```bash
+strings               latest    974d998c9c63   9 seconds ago   94.8MB
+```
+
+The end result is that you can easily test this web service and push to a cloud vendor like AWS and AWS App Runner.
+
 #### References
 
 * [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
