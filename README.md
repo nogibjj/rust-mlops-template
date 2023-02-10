@@ -1123,6 +1123,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Docker + Actix](https://github.com/patrick-fitzgerald/actix-web-docker-example)
 * [Actix](https://actix.rs/docs/application)
 * [AWS Lambda Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/lambda.html)
+* [Rust AWS Lambda Blog Post](https://dev.to/aws-builders/serverless-lambdas-with-rust-on-aws-hkh)
 
 ### Data Frames
 
