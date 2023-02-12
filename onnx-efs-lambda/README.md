@@ -4,11 +4,11 @@
 
 To replicate:
 
-A.  Create EFS and configure access point with /mnt/efs.  Also open up securitygroup to port 2049.
-B.  Configure to mount on AWS Lambda and use access point
-C.  Copy items you need in Lambda, i.e. models (squeezenet1.0-8.onnx, hugging face onnx, etc) and shared object files for example `libonnxruntime.so.1.8.1`
-D.  Set environmental variable for AWS Lambda runtime for LD_LIBRARY_PATH to point to /mnt/efs
-E.  Tell code to use model
+* A.  Create EFS and configure access point with /mnt/efs.  Also open up securitygroup to port 2049.
+* B.  Configure to mount on AWS Lambda and use access point
+* C.  Copy items you need in Lambda, i.e. models (squeezenet1.0-8.onnx, hugging face onnx, etc) and shared object files for example `libonnxruntime.so.1.8.1`
+* D.  Set environmental variable for AWS Lambda runtime for LD_LIBRARY_PATH to point to /mnt/efs
+* E.  Tell code to use model
 
 Close, but having issue with `libonnxruntime.so.1.8.1`
 
