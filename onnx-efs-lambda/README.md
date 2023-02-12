@@ -2,9 +2,13 @@
 
 ![Screenshot 2023-02-12 at 4 04 15 PM](https://user-images.githubusercontent.com/58792/218337046-e240d0e4-0406-4920-8c07-429cde193741.png)
 
+To replicate:
 
-
-
+A.  Create EFS and configure access point with /mnt/efs.  Also open up securitygroup to port 2049.
+B.  Configure to mount on AWS Lambda and use access point
+C.  Copy items you need in Lambda, i.e. models (squeezenet1.0-8.onnx, hugging face onnx, etc) and shared object files for example `libonnxruntime.so.1.8.1`
+D.  Set environmental variable for AWS Lambda runtime for LD_LIBRARY_PATH to point to /mnt/efs
+E.  Tell code to use model
 
 Close, but having issue with `libonnxruntime.so.1.8.1`
 
@@ -37,3 +41,11 @@ cargo lambda invoke --remote \
 }
 (.venv) vscode@f19e45043f99:/workspaces/rust-mlops-template/onnx-efs-lambda$ 
 ```
+
+### Follow up items:
+
+* Next steps, try t5 model and create an inference that summarizes documents.  Figure out how fast inference can be on a CPU.
+
+
+
+
