@@ -1,3 +1,10 @@
+Rust over 400 times faster
+
+<img width="1283" alt="Screenshot 2023-02-10 at 3 44 35 PM" src="https://user-images.githubusercontent.com/58792/218194202-848ff0d8-140b-419e-9b7c-164c233ae91e.png">
+
+
+
+
 A rust version of the following
 
 ```python
