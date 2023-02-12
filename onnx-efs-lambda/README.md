@@ -1,5 +1,11 @@
 ## Notes
 
+![Screenshot 2023-02-12 at 4 04 15 PM](https://user-images.githubusercontent.com/58792/218337046-e240d0e4-0406-4920-8c07-429cde193741.png)
+
+
+
+
+
 Close, but having issue with `libonnxruntime.so.1.8.1`
 
 ```bash
