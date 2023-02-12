@@ -5,20 +5,10 @@ use onnxruntime::{
     environment::Environment, ndarray::Array, tensor::OrtOwnedTensor, GraphOptimizationLevel,
     LoggingLevel,
 };
-use tracing::Level;
-use tracing_subscriber::FmtSubscriber;
 
 type Error = Box<dyn std::error::Error>;
 
 pub fn runit() -> Result<Vec<f32>, Error> {
-    // Setup the example's log level.
-    // NOTE: ONNX Runtime's log level is controlled separately when building the environment.
-    let subscriber = FmtSubscriber::builder()
-        .with_max_level(Level::TRACE)
-        .finish();
-
-    tracing::subscriber::set_global_default(subscriber).expect("setting default subscriber failed");
-
     let environment = Environment::builder()
         .with_name("test")
         // The ONNX Runtime's log level can be different than the one of the wrapper crate or the application.
