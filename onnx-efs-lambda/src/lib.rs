@@ -10,7 +10,7 @@ use tracing_subscriber::FmtSubscriber;
 
 type Error = Box<dyn std::error::Error>;
 
-pub fn run() -> Result<(), Error> {
+pub fn runit() -> Result<Vec<f32>, Error> {
     // Setup the example's log level.
     // NOTE: ONNX Runtime's log level is controlled separately when building the environment.
     let subscriber = FmtSubscriber::builder()
@@ -33,7 +33,7 @@ pub fn run() -> Result<(), Error> {
         //       _not_ SqueezeNet 1.1 as downloaded by '.with_model_downloaded(ImageClassification::SqueezeNet)'
         //       Obtain it with:
         //          curl -LO "https://github.com/onnx/models/raw/master/vision/classification/squeezenet/model/squeezenet1.0-8.onnx"
-        .with_model_from_file("squeezenet1.0-12.onnx")?;
+        .with_model_from_file("/mnt/efs/squeezenet1.0-12.onnx")?;
 
     let input0_shape: Vec<usize> = session.inputs[0].dimensions().map(|d| d.unwrap()).collect();
     let output0_shape: Vec<usize> = session.outputs[0]
@@ -58,9 +58,12 @@ pub fn run() -> Result<(), Error> {
     let outputs: Vec<OrtOwnedTensor<f32, _>> = session.run(input_tensor_values)?;
 
     assert_eq!(outputs[0].shape(), output0_shape.as_slice());
+    //capture the top 5 scores
+    let mut scores = Vec::new();
     for i in 0..5 {
+        scores.push(outputs[0][[0, i, 0, 0]]);
         println!("Score for class [{}] =  {}", i, outputs[0][[0, i, 0, 0]]);
     }
-
-    Ok(())
+    //return the top 5 scores
+    Ok(scores)
 }
