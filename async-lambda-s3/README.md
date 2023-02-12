@@ -10,3 +10,5 @@ Then do `make invoke`
   "size": "Total size of all buckets: 114.20 GB"
 }
 ```
+
+![Screenshot 2023-02-12 at 10 57 07 AM](https://user-images.githubusercontent.com/58792/218321857-9c47dfaa-ea96-452c-8aec-be45063466d0.png)
