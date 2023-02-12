@@ -44,7 +44,7 @@ cargo lambda invoke --remote \
 
 ### Follow up items:
 
-* Next steps, try t5 model and create an inference that summarizes documents.  Figure out how fast inference can be on a CPU.
+* Next steps, try t5 model and create an inference that summarizes documents.  Figure out how fast inference can be on a CPU by playing around with memory/cpu combo.
 
 
 
