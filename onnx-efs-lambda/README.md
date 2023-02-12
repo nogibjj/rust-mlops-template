@@ -47,5 +47,13 @@ cargo lambda invoke --remote \
 * Next steps, try t5 model and create an inference that summarizes documents.  Figure out how fast inference can be on a CPU by playing around with memory/cpu combo.
 
 
+#### High Memory
+
+You can see inference time gets as low as 40 ms.
+
+![Screenshot 2023-02-12 at 4 52 02 PM](https://user-images.githubusercontent.com/58792/218339408-5c6fd1b9-0844-406d-8a4e-0d95ecf5a230.png)
+
+
+
 
 
