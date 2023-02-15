@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rust-bert = "0.19.0"
+rust-bert = "0.20.0"
 clap = {version="4.0.32", features=["derive"]}
 wikipedia = "0.3.4"
