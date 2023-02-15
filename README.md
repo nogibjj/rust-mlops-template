@@ -1165,6 +1165,10 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Quarto](https://quarto.org/)
 * [Jupyter Rust](https://github.com/google/evcxr/blob/main/evcxr_jupyter/README.md)
 
+### Computer Vision
+
+* [Visualizing real world computer vision, powered by Rust](https://github.com/rerun-io)
+
 ### Linux Tools
 
 * [Great example of a cross-platform tool in Rust](https://github.com/GyulyVGC/sniffnet)
