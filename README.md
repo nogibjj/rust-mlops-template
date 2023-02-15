@@ -1242,3 +1242,8 @@ https://bheisler.github.io/criterion.rs/book/criterion_rs.html
 ### OpenAI
 
 * [OpenAI Rust Example](https://github.com/deontologician/openai-api-rust)
+
+### Popularity
+
+* [rust worlds fastest growing language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
+
