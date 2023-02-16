@@ -17,3 +17,4 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 
 * [Make Python Gil Optional](https://peps.python.org/pep-0703/)
 * [energy usage languages](https://haslab.github.io/SAFER/scp21.pdf)
+* [Note, AWS Lambda is written in Rust](https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/)
