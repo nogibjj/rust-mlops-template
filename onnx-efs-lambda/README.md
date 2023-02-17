@@ -53,6 +53,7 @@ You can see inference time gets as low as 40 ms.
 
 ![Screenshot 2023-02-12 at 4 52 02 PM](https://user-images.githubusercontent.com/58792/218339408-5c6fd1b9-0844-406d-8a4e-0d95ecf5a230.png)
 
+![9 3-efs-lambda-llms](https://user-images.githubusercontent.com/58792/219347763-bb6e730a-b2aa-4103-8321-93b0a452ce7c.png)
 
 
 

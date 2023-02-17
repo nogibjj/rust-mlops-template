@@ -1165,6 +1165,10 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Quarto](https://quarto.org/)
 * [Jupyter Rust](https://github.com/google/evcxr/blob/main/evcxr_jupyter/README.md)
 
+### Computer Vision
+
+* [Visualizing real world computer vision, powered by Rust](https://github.com/rerun-io)
+
 ### Linux Tools
 
 * [Great example of a cross-platform tool in Rust](https://github.com/GyulyVGC/sniffnet)
@@ -1240,3 +1244,8 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### OpenAI
 
 * [OpenAI Rust Example](https://github.com/deontologician/openai-api-rust)
+
+### Popularity
+
+* [rust worlds fastest growing language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
+
