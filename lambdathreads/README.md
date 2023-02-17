@@ -13,6 +13,11 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 * Replicate this experiment with 100 instances in 100 AWS and do 100 threads in Rust vs 100 processes in Python and summarized cost:  https://aws.amazon.com/blogs/compute/parallel-processing-in-python-with-aws-lambda/.
 * Do an ONNX prediction on 100 image files in AWS S3 or AWS EFS using 100 threads in Rust and 100 processes in Python, then sum cost at 50M invocations.
 
+## Counter Reasons why Python might be ok in some scenarios (From Brian Tarbox, Alexa Guru)
+
+1) many workloads are not pure cpu, in particular in my Alexa skill I call [quickchart.io](https://quickchart.io) 10x in threads to get a bunch of charts and that works great.
+2) for purely cpu constrained tasks I would consider having a main lambda that invoked multiple separate helper lambdas which each ran one core and synchronized the resulting data.
+
 
 ## References
 
