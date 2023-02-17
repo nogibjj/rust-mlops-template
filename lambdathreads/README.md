@@ -17,7 +17,8 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 
 1) many workloads are not pure cpu, in particular in my Alexa skill I call [quickchart.io](https://quickchart.io) 10x in threads to get a bunch of charts and that works great.
 2) for purely cpu constrained tasks I would consider having a main lambda that invoked multiple separate helper lambdas which each ran one core and synchronized the resulting data.
-**comment from Noah:  Option 2) is actually very slick (i.e you using Rust Firecracker to be your non-GIL.  The only gotcha is the idle core(s) which in theory are being wasted and your charged for it**
+
+**comment from Noah:  Option 2) is actually very slick (i.e you using Rust Firecracker to be your non-GIL)  The only gotcha is the idle core(s) which in theory are being wasted and your charged for it**
 
 ## References
 
