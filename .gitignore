@@ -1,3 +1,6 @@
+#checksums
+testfiles
+
 #ignore onnx file
 *.onnx
 
