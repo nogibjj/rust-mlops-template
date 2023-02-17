@@ -17,10 +17,12 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 
 1) many workloads are not pure cpu, in particular in my Alexa skill I call [quickchart.io](https://quickchart.io) 10x in threads to get a bunch of charts and that works great.
 2) for purely cpu constrained tasks I would consider having a main lambda that invoked multiple separate helper lambdas which each ran one core and synchronized the resulting data.
-
+**comment from Noah:  Option 2) is actually very slick (i.e you using Rust Firecracker to be your non-GIL.  The only gotcha is the idle core(s) which in theory are being wasted and your charged for it**
 
 ## References
 
 * [Make Python Gil Optional](https://peps.python.org/pep-0703/)
 * [energy usage languages](https://haslab.github.io/SAFER/scp21.pdf)
 * [Note, AWS Lambda is written in Rust](https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/)
+* [Up to Six Cores](https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/)
+* [](https://medium.com/@harrisaaron/multithreading-in-lambda-youll-need-to-use-this-much-memory-1ad7d257fbb3)
