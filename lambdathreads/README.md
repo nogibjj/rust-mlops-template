@@ -25,4 +25,5 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 * [energy usage languages](https://haslab.github.io/SAFER/scp21.pdf)
 * [Note, AWS Lambda is written in Rust](https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/)
 * [Up to Six Cores](https://aws.amazon.com/about-aws/whats-new/2020/12/aws-lambda-supports-10gb-memory-6-vcpu-cores-lambda-functions/)
-* [](https://medium.com/@harrisaaron/multithreading-in-lambda-youll-need-to-use-this-much-memory-1ad7d257fbb3)
+* [Relationship between Lambda and Memory](https://medium.com/@harrisaaron/multithreading-in-lambda-youll-need-to-use-this-much-memory-1ad7d257fbb3)
+* [David Beazley on GIL](http://www.dabeaz.com/GIL/)
