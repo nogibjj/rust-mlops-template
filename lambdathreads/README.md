@@ -20,6 +20,15 @@ Note, this was a very crude, buggy and fast benchmark to show the penalty of pro
 
 **comment from Noah:  Option 2) is actually very slick (i.e you using [Rust Firecracker](https://github.com/firecracker-microvm/firecracker) to be your non-GIL)  The only gotcha is the idle core(s) which in theory are being wasted and your charged for it**
 
+## Big Long-term Questions on Benchmarking AWS Lambda Python vs Rust
+
+* Could you treat AWS Lambda like an optimization problem and solve it mathmatically without writing any code and compare Python performance vs Rust/Go/Etc?
+* Does the price point of Rust/Go/C# with ONNX on CPU Lambda with an ARM target make it attractive for simple model inference, especially at 128MB level?  
+How does the performance of AWS Lambda compare to other serverless computing options in the market, such as Google Cloud Functions and Microsoft Azure Functions?
+* What are some best practices for benchmarking AWS Lambda functions to ensure accurate and meaningful results, such as using appropriate workload types or adjusting resource allocation?
+* How has the evolution of AWS Lambda, including updates to its runtime environments and resource limits, impacted its performance and potential use cases over time?
+* Can AWS Lambda be effectively used for high-performance computing applications, such as scientific simulations or machine learning training, and how does it compare to other traditional computing approaches?
+
 ## References
 
 * [Make Python Gil Optional](https://peps.python.org/pep-0703/)
