@@ -1118,6 +1118,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [best-of-ml-rust](https://github.com/e-tornike/best-of-ml-rust)
 * [Awesome-Rust-MachineLearning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 
+### Rust MLOps Platforms
+
+* [wallaroo.ai community install](https://docs.wallaroo.ai/wallaroo-operations-guide/wallaroo-install-guides/wallaroo-community-install-guides/wallaroo-community-install/wallaroo-community-install-guide/)
+
 ### Cloud Computing
 
 #### AWS
