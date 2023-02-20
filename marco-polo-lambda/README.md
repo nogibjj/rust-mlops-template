@@ -1,5 +1,10 @@
 ### Steps to run
 
+Step 1:  [Install Cargo Lambda](https://www.cargo-lambda.info)  
+
+
+Step 2:
+
 * `make format` to format code
 * `make lint` to lint
 * `make release-arm` to build for arm which is: `cargo lambda build --release --arm64`
