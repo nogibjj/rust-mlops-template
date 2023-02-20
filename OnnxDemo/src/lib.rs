@@ -7,8 +7,11 @@ use onnxruntime::{
 };
 use tracing::Level;
 use tracing_subscriber::FmtSubscriber;
+use std::include_bytes;
 
 type Error = Box<dyn std::error::Error>;
+
+static MODEL_DATA: &[u8] = include_bytes!("../squeezenet1.0-8.onnx");
 
 pub fn run() -> Result<(), Error> {
     // Setup the example's log level.
@@ -33,7 +36,7 @@ pub fn run() -> Result<(), Error> {
         //       _not_ SqueezeNet 1.1 as downloaded by '.with_model_downloaded(ImageClassification::SqueezeNet)'
         //       Obtain it with:
         //          curl -LO "https://github.com/onnx/models/raw/master/vision/classification/squeezenet/model/squeezenet1.0-8.onnx"
-        .with_model_from_file("squeezenet1.0-12.onnx")?;
+        .with_model_from_memory(MODEL_DATA)?;
 
     let input0_shape: Vec<usize> = session.inputs[0].dimensions().map(|d| d.unwrap()).collect();
     let output0_shape: Vec<usize> = session.outputs[0]
