@@ -6,7 +6,7 @@ Python equivalent:  https://github.com/nogibjj/rust-tutorial/blob/main/week5/mpl
 
 ## Replicate and Expand Crude Benchmark
 
-Note, this was a very crude, buggy and fast benchmark to show the penalty of processes in a low memory environment like AWS Lambda.  To further expand this benchmark and create a cool blog post feel free to try these ideas out:
+Note, this was a very crude, **BUGGY** and fast benchmark to show the penalty of processes in a low memory environment like AWS Lambda.  To further expand this benchmark and create a cool blog post feel free to try these ideas out:
 
 * Fix any loop bugs and replace compute with something like a fibonnici number, etc that ensure the same compute is happening.
 * Dedupe Lambda: Mount EFS and create 100 1MB files of which 50 each are identical.  Using processes in Python and Threads in Rust checksum them all to deduct for duplications than sum the cost of invoking 50M times (i.e. this could be a SaaS provider's service). 
