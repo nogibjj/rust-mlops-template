@@ -28,6 +28,10 @@ How does the performance of AWS Lambda compare to other serverless computing opt
 * What are some best practices for benchmarking AWS Lambda functions to ensure accurate and meaningful results, such as using appropriate workload types or adjusting resource allocation?
 * How has the evolution of AWS Lambda, including updates to its runtime environments and resource limits, impacted its performance and potential use cases over time?
 * Can AWS Lambda be effectively used for high-performance computing applications, such as scientific simulations or machine learning training, and how does it compare to other traditional computing approaches?
+* Could you replicate this [ruff linter](https://github.com/charliermarsh/ruff) example inside of AWS Lambda, ie. first serial then parallel version?
+
+<img width="970" alt="Screenshot 2023-02-26 at 8 56 05 AM" src="https://user-images.githubusercontent.com/58792/221420042-5c58e779-9439-4050-a26d-2c70dd159825.png">
+
 
 ## References
 
