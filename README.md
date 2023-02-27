@@ -1118,6 +1118,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [best-of-ml-rust](https://github.com/e-tornike/best-of-ml-rust)
 * [Awesome-Rust-MachineLearning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning)
 
+### Rust MLOps Platforms
+
+* [wallaroo.ai community install](https://docs.wallaroo.ai/wallaroo-operations-guide/wallaroo-install-guides/wallaroo-community-install-guides/wallaroo-community-install/wallaroo-community-install-guide/)
+
 ### Cloud Computing
 
 #### AWS
@@ -1179,6 +1183,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Pyo3 rust binding for Python](https://github.com/PyO3/pyo3)
 * [Inline Python in Rust](https://github.com/fusion-engineering/inline-python)
 * [Red Hat:  Speed up Python using Rust](https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#create_a_new_crate)
+* [Ruff 12-120X faster linting of Python code](https://notes.crmarsh.com/python-tooling-could-be-much-much-faster)
 
 ### GUI
 
@@ -1213,6 +1218,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [150+ million users with Rust MLOPs](https://engg.glance.com/serving-ml-at-the-speed-of-rust-748c0ca82f22)
 * [all language benchmarks](https://bheisler.github.io/criterion.rs/book/criterion_rs.html)
 * [polars benchmark vs pandas and dask](https://www.pola.rs/benchmarks.html)
+* [Python vs Rust in AWS Lambda for a Data Guy](https://www.confessionsofadataguy.com/aws-lambdas-python-vs-rust-performance-and-cost-savings/)
 
 ### Testing Tools
 
