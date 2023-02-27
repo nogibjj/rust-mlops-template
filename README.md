@@ -1218,6 +1218,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [150+ million users with Rust MLOPs](https://engg.glance.com/serving-ml-at-the-speed-of-rust-748c0ca82f22)
 * [all language benchmarks](https://bheisler.github.io/criterion.rs/book/criterion_rs.html)
 * [polars benchmark vs pandas and dask](https://www.pola.rs/benchmarks.html)
+* [Python vs Rust in AWS Lambda for a Data Guy](https://www.confessionsofadataguy.com/aws-lambdas-python-vs-rust-performance-and-cost-savings/)
 
 ### Testing Tools
 
