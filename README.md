@@ -1113,6 +1113,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Microsoft Learn Rust](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
 * [Rust Machine Learning Book](https://github.com/rust-ml/book)
 
+### End to End Examples
+
+* [Rust micro-server for Text Summarization deployed via Kubernetes and Using Hugging Face Bindings](https://github.com/szheng3/rust-individual-project-2)
+
 ### MLOps/ML Engineering and Data Science
 
 * [best-of-ml-rust](https://github.com/e-tornike/best-of-ml-rust)
