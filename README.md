@@ -1167,6 +1167,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
 * [Rust PyTorch with Actix-Web Example](https://github.com/kykosic/actix-pytorch-example)
 
+### Search Engines
+
+* [GitHub Search](https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search/)
+
 ### Web Microservices and Serverless
 
 * [Docker + Actix](https://github.com/patrick-fitzgerald/actix-web-docker-example)
