@@ -2,8 +2,6 @@
 
 Python equivalent:  https://github.com/nogibjj/rust-tutorial/blob/main/week5/mplambda.py
 
-
-
 ## Replicate and Expand Crude Benchmark
 
 Note, this was a very crude, **BUGGY** and fast benchmark to show the penalty of processes in a low memory environment like AWS Lambda.  To further expand this benchmark and create a cool blog post feel free to try these ideas out:
@@ -32,6 +30,9 @@ How does the performance of AWS Lambda compare to other serverless computing opt
 
 <img width="970" alt="Screenshot 2023-02-26 at 8 56 05 AM" src="https://user-images.githubusercontent.com/58792/221420042-5c58e779-9439-4050-a26d-2c70dd159825.png">
 
+## Related Benchmarking
+
+* [Python vs Rust Lambda](https://github.com/rbtcollins/PythonVsRustAWSLambda/tree/tweaks)
 
 ## References
 

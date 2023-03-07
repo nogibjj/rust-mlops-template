@@ -1093,6 +1093,20 @@ strings               latest    974d998c9c63   9 seconds ago   94.8MB
 
 The end result is that you can easily test this web service and push to a cloud vendor like AWS and AWS App Runner.
 
+
+#### Open AI Raw HTTP Request Example
+
+Code here:  https://github.com/nogibjj/assimilate-openai/tree/main/rust-curl-openai
+
+```bash
+(.venv) @noahgift ➜ /workspaces/assimilate-openai/rust-curl-openai (main) $ cargo run
+   Compiling reqwest v0.11.14
+   Compiling rust-curl-openai v0.1.0 (/workspaces/assimilate-openai/rust-curl-openai)
+    Finished dev [unoptimized + debuginfo] target(s) in 4.78s
+     Running `target/debug/rust-curl-openai`
+{"id":"cmpl-6rDd8mzOtMx7kKobqV0isiC7TkqU4","object":"text_completion","created":1678141798,"model":"text-davinci-003","choices":[{"text":"\n\nJupiter is the fifth planet from the Sun and the biggest one in our Solar System. It is very bright and can be seen in the night sky. It is named after the Roman god Jupiter. It is usually the third brightest thing you can see in the night sky after the Moon and Venus.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":151,"completion_tokens":62,"total_tokens":213}}
+```
+
 #### References
 
 * [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
@@ -1112,6 +1126,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [awesome rust](https://crates.io/crates/awesome-rust)
 * [Microsoft Learn Rust](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
 * [Rust Machine Learning Book](https://github.com/rust-ml/book)
+
+### End to End Examples
+
+* [Rust micro-server for Text Summarization deployed via Kubernetes and Using Hugging Face Bindings](https://github.com/szheng3/rust-individual-project-2)
 
 ### MLOps/ML Engineering and Data Science
 
@@ -1148,6 +1166,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [Rust bindings for the C++ api of PyTorch](https://github.com/LaurentMazare/tch-rs)
 * [Rust Pytorch example](https://www.swiftdiaries.com/rust/pytorch/)
 * [Rust PyTorch with Actix-Web Example](https://github.com/kykosic/actix-pytorch-example)
+
+### Search Engines
+
+* [GitHub Search](https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search/)
 
 ### Web Microservices and Serverless
 
@@ -1255,3 +1277,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 * [rust worlds fastest growing language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
 
+### Rewrite Python to Rust
+
+* [Oxidizing bmap-tools: rewriting a Python project in Rust](https://www.collabora.com/news-and-blog/blog/2023/03/03/oxidizing-bmap-tools-rewriting-a-python-project-in-rust/)
+* [Oxidizing](https://wiki.mozilla.org/Oxidation)
