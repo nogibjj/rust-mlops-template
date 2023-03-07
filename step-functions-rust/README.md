@@ -20,3 +20,6 @@ cargo lambda invoke --remote \
 * create new rust polo lambda
 `cargo lambda new rust-polo`
 
+
+![Screenshot 2023-03-07 at 12 06 12 PM](https://user-images.githubusercontent.com/58792/223496628-e6e6e221-68e4-4930-b1bd-001ebbbb4235.png)
+![Screenshot 2023-03-07 at 12 06 12 PM](https://user-images.githubusercontent.com/58792/223496635-ba1e8e21-e1fa-437c-81c0-c75e0f83ed99.png)
