@@ -1,53 +1,38 @@
 use lambda_runtime::{run, service_fn, Error, LambdaEvent};
-use onnx_efs_lambda::runit;
+
 use serde::{Deserialize, Serialize};
 
+/// This is a made-up example. Requests come into the runtime as unicode
+/// strings in json format, which can map to any structure that implements `serde::Deserialize`
+/// The runtime pays no attention to the contents of the request payload.
 #[derive(Deserialize)]
 struct Request {
-    name: String,
+    command: String,
 }
 
+/// This is a made-up example of what a response structure may look like.
+/// There is no restriction on what it can be. The runtime requires responses
+/// to be serialized into json. The runtime pays no attention
+/// to the contents of the response payload.
 #[derive(Serialize)]
 struct Response {
     req_id: String,
     msg: String,
-    files: String,
-    scores: Vec<f32>,
 }
 
-//helper function that lists the files all the files in the EFS volume
-async fn list_files() -> Result<String, Error> {
-    let mut files = String::new();
-    for entry in std::fs::read_dir("/mnt/efs")? {
-        let entry = entry?;
-        let path = entry.path();
-        if path.is_file() {
-            files.push_str(&format!(
-                "
-
-{}",
-                path.display()
-            ));
-        }
-    }
-    Ok(files)
-}
-
+/// This is the main body for the function.
+/// Write your code inside it.
+/// There are some code example in the following URLs:
+/// - https://github.com/awslabs/aws-lambda-rust-runtime/tree/main/examples
+/// - https://github.com/aws-samples/serverless-rust-demo/
 async fn function_handler(event: LambdaEvent<Request>) -> Result<Response, Error> {
     // Extract some useful info from the request
-    //print out a test message of "hello"
-    println!(r#"hello Duke"#);
-    let name = event.payload.name;
-    let files = list_files().await?;
-    let scores = runit();
-    //convert to struct
-    let scores = scores.unwrap();
+    let command = event.payload.command;
+
     // Prepare the response
     let resp = Response {
         req_id: event.context.request_id,
-        msg: format!("Hello, {}!", name),
-        files,
-        scores,
+        msg: format!("Command {}.", command),
     };
 
     // Return `Response` (it will be serialized to JSON automatically by the runtime)

@@ -1,33 +1,68 @@
 use lambda_runtime::{run, service_fn, Error, LambdaEvent};
-
+use rayon::prelude::*;
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 
-/// This is a made-up example. Requests come into the runtime as unicode
-/// strings in json format, which can map to any structure that implements `serde::Deserialize`
-/// The runtime pays no attention to the contents of the request payload.
+//const
+const FILENAME: &str = "/efs/testfiles/";
+
 #[derive(Deserialize)]
 struct Request {
     command: String,
 }
 
-/// This is a made-up example of what a response structure may look like.
-/// There is no restriction on what it can be. The runtime requires responses
-/// to be serialized into json. The runtime pays no attention
-/// to the contents of the response payload.
 #[derive(Serialize)]
 struct Response {
     req_id: String,
     msg: String,
 }
 
-/// This is the main body for the function.
-/// Write your code inside it.
-/// There are some code example in the following URLs:
-/// - https://github.com/awslabs/aws-lambda-rust-runtime/tree/main/examples
-/// - https://github.com/aws-samples/serverless-rust-demo/
+/* Checksums all files in the given directory using Rayon and md5
+Use the const FILENAME to set the directory to search
+*/
+fn checksum_parallel(files: Vec<String>) -> Result<HashMap<String, Vec<String>>, Error> {
+    let checksums = std::sync::Mutex::new(HashMap::new());
+    files.par_iter().for_each(|file| {
+        let checksum = md5::compute(std::fs::read(file).unwrap());
+        let checksum = format!("{:x}", checksum);
+        let mut checksums = checksums.lock().unwrap();
+        checksums
+            .entry(checksum)
+            .or_insert_with(Vec::new)
+            .push(file.to_string());
+    });
+    Ok(checksums.into_inner().unwrap())
+}
+/*
+Find all the files with more than one entry in the HashMap
+*/
+async fn find_duplicates(checksums: HashMap<String, String>) -> Vec<Vec<String>> {
+    let mut duplicates = Vec::new();
+    for (_checksum, files) in checksums {
+        if files.len() > 1 {
+            duplicates.push(files);
+        }
+    }
+    duplicates
+}
+
+//run the duplicate search
+async fn run_duplicate_search() -> Result<Vec<Vec<String>>, Error> {
+    let files = std::fs::read_dir(FILENAME)?
+        .map(|res| res.map(|e| e.path().to_str().unwrap().to_string()))
+        .collect::<Result<Vec<_>, std::io::Error>>()?;
+    let checksums = checksum_parallel(files)?;
+    let duplicates = find_duplicates(checksums).await;
+    Ok(duplicates)
+}
+
+
 async fn function_handler(event: LambdaEvent<Request>) -> Result<Response, Error> {
     // Extract some useful info from the request
     let command = event.payload.command;
+
+    // Run the duplicate search
+    let duplicates = run_duplicate_search().await?;
 
     // Prepare the response
     let resp = Response {
