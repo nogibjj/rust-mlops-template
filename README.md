@@ -1107,6 +1107,12 @@ Code here:  https://github.com/nogibjj/assimilate-openai/tree/main/rust-curl-ope
 {"id":"cmpl-6rDd8mzOtMx7kKobqV0isiC7TkqU4","object":"text_completion","created":1678141798,"model":"text-davinci-003","choices":[{"text":"\n\nJupiter is the fifth planet from the Sun and the biggest one in our Solar System. It is very bright and can be seen in the night sky. It is named after the Roman god Jupiter. It is usually the third brightest thing you can see in the night sky after the Moon and Venus.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":151,"completion_tokens":62,"total_tokens":213}}
 ```
 
+#### GCP Cloud Run
+
+* Verified GCP Cloud Run works, code here:  https://github.com/nogibjj/rust-mlops-template/tree/main/webdocker 
+![Screenshot 2023-03-07 at 4 31 02 PM](https://user-images.githubusercontent.com/58792/223558711-efedd835-0ddf-4727-854c-1928bb0a57de.png)
+
+
 #### References
 
 * [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
