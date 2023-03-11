@@ -1248,6 +1248,10 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [polars benchmark vs pandas and dask](https://www.pola.rs/benchmarks.html)
 * [Python vs Rust in AWS Lambda for a Data Guy](https://www.confessionsofadataguy.com/aws-lambdas-python-vs-rust-performance-and-cost-savings/)
 
+### Delta Lake
+
+* [Delta Lake Rust](https://github.com/delta-io/delta-rs)
+
 ### Testing Tools
 
 * [Fuzz Testing Rust](https://github.com/loiclec/fuzzcheck-rs)
