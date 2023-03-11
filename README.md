@@ -1251,6 +1251,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Delta Lake
 
 * [Delta Lake Rust](https://github.com/delta-io/delta-rs)
+* [Saving 10X or more using Rust versus Spark talk](https://www.youtube.com/watch?v=do4jsxeKfd4&t=998s)
 
 ### Testing Tools
 
