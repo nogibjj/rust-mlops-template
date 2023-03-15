@@ -2,6 +2,7 @@
 
 * AWS App Runner (verified this works)
 
+* Google App Engine
 
 * Google Cloud Run
 
