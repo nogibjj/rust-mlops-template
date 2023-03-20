@@ -1,5 +1,8 @@
 ## Notes
 
+
+[Video Walkthrough](https://youtu.be/HsU873c0B-c)
+
 ![Screenshot 2023-02-12 at 4 04 15 PM](https://user-images.githubusercontent.com/58792/218337046-e240d0e4-0406-4920-8c07-429cde193741.png)
 
 To replicate:
