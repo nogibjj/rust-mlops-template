@@ -1228,6 +1228,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [onnxruntime for Rust](https://docs.rs/onnxruntime/latest/onnxruntime/)
 * [Build standalone executables with Rust and ONNX](https://github.com/sonos/tract)
 * [Hugging Face discussion on Rust](https://discuss.huggingface.co/t/rust-applications/23060)
+* [ort - ONNX Runtime Rust bindings](https://github.com/BloopAI/ort)
 
 ### Static Web
 
@@ -1279,6 +1280,10 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Linux and GCC
 
 * [GNU GCC and Rust](https://thenewstack.io/rust-support-is-being-built-into-the-gnu-gcc-compiler/)
+
+### GTP4 Code Search
+
+* [Bloop AI-GTP4 Code Search ](https://github.com/BloopAI/bloop)
 
 ### C++ vs Rust
 
