@@ -1297,6 +1297,10 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 * [rust worlds fastest growing language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
 
+### Copilots effect on Programming
+
+* [End of programming?](https://thenewstack.io/coding-sucks-anyway-matt-welsh-on-the-end-of-programming/) *I believe instead of end of coding it means level up*
+
 ### Rewrite Python to Rust
 
 * [Oxidizing bmap-tools: rewriting a Python project in Rust](https://www.collabora.com/news-and-blog/blog/2023/03/03/oxidizing-bmap-tools-rewriting-a-python-project-in-rust/)
