@@ -14,7 +14,7 @@ deploy:
 
 invoke:
 	cargo lambda invoke --remote \
-  		--data-ascii '{"name": "Marco"}' \
+  		--data-ascii '{"name": "count"}' \
   		--output-format json \
   		async-lambda-s3
 
