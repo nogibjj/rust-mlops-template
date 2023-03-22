@@ -1,5 +1,7 @@
 ## A lambda function that async summarizes every object in every bucket
 
+[YouTube AWS Lambda Walkthrough](https://youtu.be/IhEMgX9Aeo4)
+
 It requires you to deploy with a role that can access S3.
 Then do `make invoke`
 

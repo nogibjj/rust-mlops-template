@@ -1107,6 +1107,12 @@ Code here:  https://github.com/nogibjj/assimilate-openai/tree/main/rust-curl-ope
 {"id":"cmpl-6rDd8mzOtMx7kKobqV0isiC7TkqU4","object":"text_completion","created":1678141798,"model":"text-davinci-003","choices":[{"text":"\n\nJupiter is the fifth planet from the Sun and the biggest one in our Solar System. It is very bright and can be seen in the night sky. It is named after the Roman god Jupiter. It is usually the third brightest thing you can see in the night sky after the Moon and Venus.","index":0,"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":151,"completion_tokens":62,"total_tokens":213}}
 ```
 
+#### GCP Cloud Run
+
+* Verified GCP Cloud Run works, code here:  https://github.com/nogibjj/rust-mlops-template/tree/main/webdocker 
+![Screenshot 2023-03-07 at 4 31 02 PM](https://user-images.githubusercontent.com/58792/223558711-efedd835-0ddf-4727-854c-1928bb0a57de.png)
+
+
 #### References
 
 * [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
@@ -1222,6 +1228,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [onnxruntime for Rust](https://docs.rs/onnxruntime/latest/onnxruntime/)
 * [Build standalone executables with Rust and ONNX](https://github.com/sonos/tract)
 * [Hugging Face discussion on Rust](https://discuss.huggingface.co/t/rust-applications/23060)
+* [ort - ONNX Runtime Rust bindings](https://github.com/BloopAI/ort)
 
 ### Static Web
 
@@ -1241,6 +1248,11 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [all language benchmarks](https://bheisler.github.io/criterion.rs/book/criterion_rs.html)
 * [polars benchmark vs pandas and dask](https://www.pola.rs/benchmarks.html)
 * [Python vs Rust in AWS Lambda for a Data Guy](https://www.confessionsofadataguy.com/aws-lambdas-python-vs-rust-performance-and-cost-savings/)
+
+### Delta Lake
+
+* [Delta Lake Rust](https://github.com/delta-io/delta-rs)
+* [Saving 10X or more using Rust versus Spark talk](https://www.youtube.com/watch?v=do4jsxeKfd4&t=998s)
 
 ### Testing Tools
 
@@ -1265,6 +1277,14 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
 * [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
 
+### Linux and GCC
+
+* [GNU GCC and Rust](https://thenewstack.io/rust-support-is-being-built-into-the-gnu-gcc-compiler/)
+
+### GTP4 Code Search
+
+* [Bloop AI-GTP4 Code Search ](https://github.com/BloopAI/bloop)
+
 ### C++ vs Rust
 
 * [C++ vs Rust](https://www.risingwave-labs.com/blog/building-a-cloud-database-from-scratch-why-we-moved-from-cpp-to-rust/)
@@ -1276,6 +1296,10 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 ### Popularity
 
 * [rust worlds fastest growing language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
+
+### Copilots effect on Programming
+
+* [End of programming?](https://thenewstack.io/coding-sucks-anyway-matt-welsh-on-the-end-of-programming/) *I believe instead of end of coding it means level up*
 
 ### Rewrite Python to Rust
 
