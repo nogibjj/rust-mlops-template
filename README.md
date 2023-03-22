@@ -1276,6 +1276,10 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [influxdb-rust](https://github.com/influxdb-rs/influxdb-rust)
 * [Time Series Polars Rust](https://stackoverflow.com/questions/74668242/resample-time-series-using-polars-in-rust)
 
+### Linux and GCC
+
+* [GNU GCC and Rust](https://thenewstack.io/rust-support-is-being-built-into-the-gnu-gcc-compiler/)
+
 ### C++ vs Rust
 
 * [C++ vs Rust](https://www.risingwave-labs.com/blog/building-a-cloud-database-from-scratch-why-we-moved-from-cpp-to-rust/)
