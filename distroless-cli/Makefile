@@ -8,6 +8,8 @@ lint:
 test:
 	cargo test --quiet
 
+build-docker:
+	docker build -t distroless-cli .
 
 run:
 	cargo run -- greet --name bob
