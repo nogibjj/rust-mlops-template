@@ -1112,6 +1112,12 @@ Code here:  https://github.com/nogibjj/assimilate-openai/tree/main/rust-curl-ope
 * Verified GCP Cloud Run works, code here:  https://github.com/nogibjj/rust-mlops-template/tree/main/webdocker 
 ![Screenshot 2023-03-07 at 4 31 02 PM](https://user-images.githubusercontent.com/58792/223558711-efedd835-0ddf-4727-854c-1928bb0a57de.png)
 
+#### ONNX Series
+
+* Next session try to build a GPT 2 CLI from ORT:  https://github.com/pykeio/ort
+
+
+
 
 #### References
 

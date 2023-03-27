@@ -1,7 +1,3 @@
-install:
-	cargo clean &&\
-		cargo build -j 6
-
 format:
 	cargo fmt --quiet
 
@@ -10,9 +6,6 @@ lint:
 
 test:
 	cargo test --quiet
-
-build-docker:
-	docker build -t pytorch-rust-docker .
 
 run:
 	cargo run 
