@@ -3,6 +3,7 @@ testfiles
 
 #ignore onnx file
 *.onnx
+ort
 
 #ignore models
 model/
