@@ -1,3 +1,6 @@
+#gitignore
+tch-rs-pretrain-example-docker
+
 #ignore local checkout
 plotters-doc-data
 
