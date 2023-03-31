@@ -1128,6 +1128,11 @@ git clone https://github.com/38/plotters-doc-data
 
 * Next session try to build a GPT 2 CLI from ORT:  https://github.com/pykeio/ort
 
+#### Working PyTorch + Actix (looking into Distroless as well)
+
+* [pytorch image service with actix](https://github.com/nogibjj/rusty-deploy/tree/main/rtorchdist)
+
+
 #### References
 
 * [Notes for Rust Docker Container](https://hub.docker.com/_/rust)
