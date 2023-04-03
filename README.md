@@ -1132,6 +1132,7 @@ git clone https://github.com/38/plotters-doc-data
 
 * [pytorch image service with actix](https://github.com/nogibjj/rusty-deploy/tree/main/rtorchdist)
 
+![Screenshot 2023-04-03 at 2 09 38 PM](https://user-images.githubusercontent.com/58792/229594777-096f8749-4af7-4d2b-bdc9-c6b2c0870e67.png)
 
 #### References
 
