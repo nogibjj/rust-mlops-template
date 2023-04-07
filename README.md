@@ -1153,6 +1153,7 @@ This build system is a bit unique because it recursives many Rust repos and test
 * [awesome rust](https://crates.io/crates/awesome-rust)
 * [Microsoft Learn Rust](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
 * [Rust Machine Learning Book](https://github.com/rust-ml/book)
+* [CLI Tools](https://rust-cli-recommendations.sunshowers.io/)
 
 ### End to End Examples
 
