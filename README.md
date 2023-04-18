@@ -1271,6 +1271,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 * [all language benchmarks](https://bheisler.github.io/criterion.rs/book/criterion_rs.html)
 * [polars benchmark vs pandas and dask](https://www.pola.rs/benchmarks.html)
 * [Python vs Rust in AWS Lambda for a Data Guy](https://www.confessionsofadataguy.com/aws-lambdas-python-vs-rust-performance-and-cost-savings/)
+* [Rust vs Python in AWS Lambda](https://blog.scanner.dev/serverless-speed-rust-vs-go-java-python-in-aws-lambda-functions/)
 
 ### Delta Lake
 
