@@ -1235,6 +1235,7 @@ One goal is to reduce using Notebooks in favor of lightweight markdown tools (i.
 * [Red Hat:  Speed up Python using Rust](https://developers.redhat.com/blog/2017/11/16/speed-python-using-rust#create_a_new_crate)
 * [Ruff 12-120X faster linting of Python code](https://notes.crmarsh.com/python-tooling-could-be-much-much-faster)
 * [Convert Python model to Rust TensorFlow](https://github.com/CrowdStrike/tf2rust/tree/main)
+* [Hugging Face home grown inference in Rust](https://github.com/huggingface/text-generation-inference/blob/main/router/src/main.rs)
 
 ### GUI
 
