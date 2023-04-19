@@ -1330,3 +1330,7 @@ https://able.bio/haixuanTao/deep-learning-in-rust-with-gpu--26c53a7f
 
 * [Oxidizing bmap-tools: rewriting a Python project in Rust](https://www.collabora.com/news-and-blog/blog/2023/03/03/oxidizing-bmap-tools-rewriting-a-python-project-in-rust/)
 * [Oxidizing](https://wiki.mozilla.org/Oxidation)
+
+### Training LLMs from Scratch
+
+* [replit llm training](https://blog.replit.com/llm-training)
