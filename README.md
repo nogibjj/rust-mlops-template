@@ -5,10 +5,15 @@
 A work in progress to build out solutions in Rust for MLOPs.
 This repo is more of a cookbook style.  For a more gentle step by step guide to MLOps with Rust, please see my [lecture notes as a Rust MDBook here](https://nogibjj.github.io/rust-tutorial/).
 
-
-
 ![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
 
+
+## Take the Coursera Course!
+
+You can learn Rust from this Duke Coursera MLOps course:
+
+![Screenshot 2023-05-10 at 12 30 35 PM](https://github.com/nogibjj/rust-mlops-template/assets/58792/6d4c304b-de8d-4607-a2b8-d48c2e1a4c03)
+[Take course here](https://www.coursera.org/learn/devops-dataops-mlops-duke).  Direct link:  [https://www.coursera.org/learn/devops-dataops-mlops-duke](https://www.coursera.org/learn/devops-dataops-mlops-duke)
 
 ## Demo Hitlist (Will Solve hopefully almost every day/weekly)
 
