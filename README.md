@@ -7,6 +7,7 @@ This repo is more of a cookbook style.  For a more gentle step by step guide to 
 
 ![8-3-modern-rust-development](https://user-images.githubusercontent.com/58792/211929407-633fddb8-8f44-4d30-861c-30aaa7b481e3.png)
 
+Update, one of the more compelling projects to look at is [https://github.com/huggingface/candle](https://github.com/huggingface/candle)
 
 ## Take the Coursera Course!
 
@@ -1193,6 +1194,10 @@ This build system is a bit unique because it recursives many Rust repos and test
 ### Systems Tools
 
 * [An extended deduplication example command-line tool](https://github.com/noahgift/rdedupe)
+
+### MLOps Inference in Pure Rust
+
+* [https://github.com/huggingface/candle](https://github.com/huggingface/candle)
 
 ### Deep Learning
 
